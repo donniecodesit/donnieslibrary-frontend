@@ -32,7 +32,7 @@ export default function Header() {
                   event.preventDefault(); 
                   navigate('/');
               }}>
-                  Portfolio
+                  Game Library
               </a>
             </div>
           </div>
