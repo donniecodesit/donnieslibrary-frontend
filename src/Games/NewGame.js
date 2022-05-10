@@ -34,11 +34,7 @@ export default function NewGame() {
 
   return (
     <>
-      <GameForm
-        formData={formData}
-        handleSubmit={handleSubmit}
-        handleChange={handleChange}
-      />
+      <GameForm formData={formData} handleSubmit={handleSubmit} handleChange={handleChange} />
       {error[0] && <div className="error">{error}</div>}
     </>
   );
