@@ -7,7 +7,7 @@ const secret = process.env.REACT_APP_SECRET;
 export default function Home() {
   return (
     <Routes>
-        <Route path={"/"} element={<></>} />
+        <Route path={"/"} element={<p style={{textAlign: 'right', margin: '40px', fontWeight: 'bold', fontSize: '30px'}}>⬆️ Click a link above to get started! ⬆️</p>} />
         <Route path={"/games"} element={<Games admin={false} />} />
         <Route path={`/games/${secret}`} element={<Games admin={true} />} />
         <Route path={"/portfolio"} element={<About />} />
