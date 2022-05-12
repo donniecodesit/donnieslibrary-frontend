@@ -9,22 +9,27 @@ a {
 a:hover {
   color: #42aaa8;
 }
+
 .game-list {
-  padding: 3rem 0;
-  width: 75vw;
+  padding: 1rem 0;
+  width: 100%;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 32rem));
 }
 
 .game-card {
-  border: solid white 4px;
+  /* border: solid white 4px; */
   border-radius: 1rem;
-  height: 25rem;
   position: relative;
   overflow: hidden;
+  width: 32rem;
+  height: 18rem;
+  margin: 6px;
 }
 
 .game-card:hover .game-info {
@@ -89,8 +94,8 @@ form {
 .title {
   font-size: 72px;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding: 2rem;
+  margin: 0;
   font-family: "Kaushan Script", cursive;
 }
 
@@ -117,14 +122,11 @@ form {
     flex-direction: column;
     align-items: center;
   }
-
-  .game-list {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
-@media all and (max-width: 960px) and (min-width: 761px) {
-  .game-list {
-    grid-template-columns: repeat(2, 1fr);
+@media all and (max-width: 420px) {
+  .game-card {
+    width: 24rem;
+    height: 13.5rem;
   }
 }

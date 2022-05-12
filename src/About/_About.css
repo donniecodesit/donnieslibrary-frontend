@@ -19,7 +19,9 @@
 }
 
 .portfolio-h1 {
-  font-size: 64px;
+  font-size: 56px;
+  margin: 0;
+  text-align: center;
 }
 
 .portfolio-h2 {
@@ -55,7 +57,7 @@ img {
 }
 
 .Portfolio-header {
-  background-color: #3f72c3;
+  background-color: #7975f5;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,12 +65,13 @@ img {
   color: white;
 }
 
-.Portfolio-link {
-  color: #c6fdfc;
+.navigation-link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.Portfolio-link:hover {
-  color: #42aaa8;
+.navigation-link:hover {
+  color: #72b7f4;
 }
 
 .InfoRow {
@@ -77,8 +80,33 @@ img {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  margin: 0 20%;
+  margin: 0 10vw;
   flex-wrap: wrap;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  width: 40px;
+  height: 36px;
+}
+
+.header-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 article section {
@@ -87,10 +115,14 @@ article section {
   margin: 0 auto;
 }
 
+main article {
+  padding: 20px;
+}
+
 @media all and (max-width: 860px) {
   .InfoRow {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 2vw;
   }
 
   .portfolio-h1 {
@@ -110,5 +142,22 @@ article section {
   .portfolio-li,
   .portfolio-ul {
     font-size: 12px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .header-container {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-start {
+    flex-direction: column;
   }
 }

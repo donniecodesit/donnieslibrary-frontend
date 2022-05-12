@@ -1,13 +1,16 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+const hexValues = ['5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
 
 export default function GamesList({ games }) {
   return (
     <div className="game-list">
       {games.length > 0 &&
         games.map((game) => {
+          let hex = "";
+          for (let i = 0; i < 6; i++) { hex += hexValues[Math.floor(Math.random() * hexValues.length)] };
           return (
-            <div className="game-card" key={game.game_id}>
+            <div className="game-card" key={game.game_id} style={{border: `4px solid #${hex}`}}>
               <img className="game-image" src={game.game_image} alt={game.game_title} />
               <div className="game-info">
                 <h3 className="game-main game-title">

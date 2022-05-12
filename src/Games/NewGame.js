@@ -25,7 +25,7 @@ export default function NewGame() {
     try {
       const abortController = new AbortController();
       await createGame(formData, abortController.signal);
-      navigate("/");
+      navigate("/games");
     } catch (err) {
       console.log(err);
       setError([err.message]);

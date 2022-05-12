@@ -54,7 +54,7 @@ export default function GameForm({ formData, handleSubmit, handleChange }) {
                 </div>
                 <div>
                     <button type="submit" className="btn btn-primary mr-2"><span className="oi oi-check"></span>Submit</button>
-                    <button type="button" className="btn btn-secondary" onClick={() => navigate("/")}><span className="oi oi-x"></span>Cancel</button>
+                    <button type="button" className="btn btn-secondary" onClick={() => navigate("/games")}><span className="oi oi-x"></span>Cancel</button>
                 </div>
             </div>
         </form>
