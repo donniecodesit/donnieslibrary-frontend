@@ -3,7 +3,7 @@ import image from "../Images/phoenixnight.png";
 
 export default function AboutMe() {
   return (
-    <article className="container-fluid my-3" id="about">
+    <article className="container-fluid" id="about">
       <section className="InfoRow">
         <div className="col-lg-7">
           <h2 className="portfolio-h2">About Me:</h2>

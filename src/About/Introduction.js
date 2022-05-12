@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <article className="container-fluid my-3" id="intro">
+    <article className="container-fluid" id="intro">
       <section className="InfoRow">
         <div className="col-lg-5">
           <img src="https://avatars.githubusercontent.com/u/91988909?v=4" className="border border-secondary rounded-circle" alt="Donovan" />

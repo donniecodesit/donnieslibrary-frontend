@@ -7,7 +7,7 @@ import iconLinkedIn from "../Images/linkedin.png";
 
 export default function ContactMe() {
   return (
-    <article className="container-fluid my-3" id="contact">
+    <article className="container-fluid" id="contact">
       <section className="InfoRow">
         <div className="col-lg-5">
           <img src={image} alt="pink square" className="rounded" />

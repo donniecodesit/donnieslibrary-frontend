@@ -3,7 +3,7 @@ import image from "../Images/projects.png";
 
 export default function Projects() {
   return (
-    <article className="container-fluid my-3" id="projects">
+    <article className="container-fluid" id="projects">
       <section className="InfoRow">
         <div className="col-lg-7">
           <h2 className="portfolio-h2">Some Projects!</h2>

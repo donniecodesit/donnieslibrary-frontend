@@ -3,7 +3,7 @@ import image from "../Images/computertools.png";
 
 export default function Skills() {
   return (
-    <article className="container-fluid my-3" id="skills">
+    <article className="container-fluid" id="skills">
       <section className="InfoRow">
         <div className="col-lg-5">
           <img src={image} alt="pink square" className="rounded" />
