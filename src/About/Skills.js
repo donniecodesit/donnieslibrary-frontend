@@ -14,14 +14,14 @@ export default function Skills() {
             Languages and Libraries:
           </p>
           <p className="portfolio-p mt-0">
-            JavaScript, SQL, Express, React, Node.JS, HTML, CSS, C#, Discord.Net
+            JavaScript, SQL, Express, React, Node.JS, HTML, CSS, C#, Discord.Net, Mocha, Chai
           </p>
           <p className="portfolio-p mb-0" style={{ fontWeight: "bold" }}>
             Programs and Tools:
           </p>
           <p className="portfolio-p mt-0">
             Visual Studio Code, Git, GitHub, MongoDB, Node Package Manager,
-            Heroku, Vercel, Mocha, Chai
+            Heroku, Vercel
           </p>
           <p className="portfolio-p mb-0" style={{ fontWeight: "bold" }}>
             Other:

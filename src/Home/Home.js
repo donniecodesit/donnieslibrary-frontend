@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Games from '../Games/_Games';
 import About from '../About/_About';
+import BotInfoPage from '../BotInfo/BotInfoPage';
 const secret = process.env.REACT_APP_SECRET;
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <Route path={"/games"} element={<Games admin={false} />} />
         <Route path={`/games/${secret}`} element={<Games admin={true} />} />
         <Route path={"/portfolio"} element={<About />} />
+        <Route path={"/botinfo"} element={<BotInfoPage />} />
     </Routes>
   )
 }
