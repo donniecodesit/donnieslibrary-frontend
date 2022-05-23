@@ -7,7 +7,7 @@ export default function Projects() {
       <section className="InfoRow">
         <div className="col-lg-7">
           <h2 className="portfolio-h2">Some Projects!</h2>
-          <div className="flex row justify-content-around">
+          <div style={{display: "flex", flexDirection: "column"}}>
             <h3 className="portfolio-h3">Restaurant Reservation App</h3>
             <a
               href="https://github.com/donovanlaws/restaurant-reservation-system"
@@ -32,7 +32,7 @@ export default function Projects() {
               production, alongside version control with GitHub.
             </li>
           </ul>
-          <div className="flex row justify-content-around">
+          <div style={{display: "flex", flexDirection: "column"}}>
             <h3 className="portfolio-h3">PrototonBot Discord Bot</h3>
             <a href="https://github.com/donovanlaws/PrototonBot" target="_blank" rel="noreferrer" className="project-link" >
               Project Link

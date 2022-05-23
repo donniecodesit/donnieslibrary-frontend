@@ -8,7 +8,7 @@ export default function Header() {
     <div className="container-fluid my-2">
       <div className="header-container">
         <div className="col-5 header-start">
-          <img src="http://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png" className="header-icon" alt="react logo"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" className="header-icon" alt="react logo"/>
           <h1 className="portfolio-h1">All About Donnie!</h1>
         </div>
         <div className="col-2">
@@ -21,6 +21,14 @@ export default function Header() {
                   navigate('/portfolio');
               }}>
                   Portfolio
+              </a>
+            </div>
+            <div>
+              <a className="navigation-link" href="/" onClick={(event) => {
+                  event.preventDefault(); 
+                  navigate('/botinfo');
+              }}>
+                  Discord Bot
               </a>
             </div>
             <div>
@@ -50,6 +58,24 @@ export default function Header() {
                   </div>
                   <div>
                     <a className="navigation-link" href="#contact">Contact</a>
+                  </div>
+                </>
+              )
+            }
+            {
+              pathname === "/botinfo" && (
+                <>
+                  <div>
+                    <a className="navigation-link" href="#info">Info</a>
+                  </div>
+                  <div>
+                    <a className="navigation-link" href="#usage">Usage</a>
+                  </div>
+                  <div>
+                    <a className="navigation-link" href="#features">Features</a>
+                  </div>
+                  <div>
+                    <a className="navigation-link" href="#commands">Commands</a>
                   </div>
                 </>
               )

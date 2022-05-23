@@ -65,6 +65,12 @@ img {
   color: white;
 }
 
+.project-link {
+  margin: auto;
+  font-size: 18px;
+  margin-top: -10px;
+}
+
 .navigation-link {
   color: #ffffff;
   text-decoration: none;
