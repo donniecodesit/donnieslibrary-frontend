@@ -52,7 +52,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(1)}>{drops.element1 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element1 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd2">
@@ -61,7 +61,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(2)}>{drops.element2 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element2 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd3">
@@ -70,7 +70,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(3)}>{drops.element3 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element3 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd4">
@@ -79,7 +79,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(4)}>{drops.element4 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element4 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd5">
@@ -88,7 +88,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(5)}>{drops.element5 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element5 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd6">
@@ -97,7 +97,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(6)}>{drops.element6 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element6 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                             <div id="cmd7">
@@ -106,7 +106,7 @@ export default function BotInfoPage() {
                                     <p className="portfolio-p" style={{margin: "0 10px"}} onClick={() => handleDropdown(7)}>{drops.element7 ? "⮟" : "⮜"}</p>
                                 </div>
                                 <div style={{display: drops.element7 ? "block" : "none"}}>
-                                    <p>To Be Added</p>
+                                    <p>This display section is coming soon!</p>
                                 </div>
                             </div>
                         </div>
