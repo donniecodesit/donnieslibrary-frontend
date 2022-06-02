@@ -1,59 +1,183 @@
 .info-box > div > :nth-child(1) {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page {
-    background-image: url("https://wallpaperaccess.com/full/3053366.png");
+  background-image: url("https://wallpaperaccess.com/full/3053366.png");
+  background-repeat: repeat;
 }
 
 .page-content {
-    display: flex;
-    padding: 1rem 5rem;
-    margin: 0 10vw;
-    justify-content: center;
+  display: flex;
+  padding: 1rem 5rem;
+  margin: 0 10vw;
+  justify-content: center;
 }
 
 .botinfo-nav {
-    margin: 1rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: rgba(114, 48, 207, 0.612);
-    position: fixed;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: rgba(114, 48, 207, 0.612);
+  position: fixed;
 }
 
 .info-box {
-    margin: 1rem;
-    padding: 0.5rem;
-    border: 2px solid black;
-    box-shadow: 4px 3px 1px 1px black;
-    background-color: rgba(114, 48, 207, 0.466);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 2px solid black;
+  box-shadow: 4px 3px 1px 1px black;
+  background-color: rgba(114, 48, 207, 0.466);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-box > div {
-    margin: 0.3rem;
+  margin: 0.3rem;
 }
 
 .botinfo {
-    text-align: center;
-    background-color: rgba(83, 28, 160, 0.466);
-    border-radius: 3%;
-    padding: 1rem;
+  text-align: center;
+  background-color: rgba(83, 28, 160, 0.466);
+  border-radius: 3%;
+  padding: 1rem;
 }
 
 ul {
-    list-style: none;
-    margin: auto;
-    padding: 0.5rem;
+  list-style: none;
+  margin: auto;
+  padding: 0.5rem;
 }
 
 li {
-    border: 1px solid white;
-    margin: 0.5rem;
-    padding: 0.5rem;
+  border: 1px solid white;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hover {
+  cursor: pointer;
+  text-shadow: 2px 2px #0183d3;
+  user-select: none;
+}
+
+.my-table {
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: rgb(39, 19, 68);
+  padding: 2rem;
+}
+
+.my-table td,
+.my-table th {
+  text-align: center;
+  padding: 6px;
+}
+
+.my-table td {
+  border-right: 1px solid #f8f8f8;
+}
+
+.my-table td:last-child {
+  border: none;
+}
+
+.my-table thead th {
+  background: #757fe7;
+}
+
+.my-table thead th:nth-child(odd) {
+  background: #6462d4;
+}
+
+.my-table tr:nth-child(even) {
+  background-color: rgb(22, 9, 41);
+}
+
+.my-table-wrapper {
+  margin: 20px auto;
+  box-shadow: 0px 15px 30px rgba(29, 3, 62, 0.584);
+}
+
+@media (max-width: 768px) {
+  .botinfo {
+    width: 100vw;
+  }
+
+  .my-table-wrapper {
+    margin: auto;
+  }
+
+  .my-table {
+    display: block;
+    width: 75vw;
+  }
+
+  .my-table thead,
+  .my-table tbody,
+  .my-table thead th {
+    display: block;
+  }
+
+  .my-table thead th:last-child {
+    border-bottom: none;
+  }
+
+  .my-table thead {
+    float: left;
+  }
+
+  .my-table tbody {
+    width: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  .my-table td,
+  .my-table th {
+    padding: 20px 0.625em 0.625em 0.625em;
+    height: 6vh;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100px;
+    font-size: 11px;
+    text-overflow: ellipsis;
+  }
+
+  .my-table thead th {
+    text-align: left;
+    border-bottom: 1px solid #f7f7f9;
+  }
+
+  .my-table tbody tr {
+    display: table-cell;
+  }
+
+  .my-table tr:nth-child(even) {
+    background-color: rgb(22, 9, 41);
+  }
+
+  .my-table tr td:nth-child(odd) {
+    border-right: 1px solid #e6e4e4;
+  }
+
+  .my-table tr td:nth-child(even) {
+    border-right: 1px solid #e6e4e4;
+  }
+
+  .my-table tbody td {
+    display: block;
+    text-align: center;
+  }
 }

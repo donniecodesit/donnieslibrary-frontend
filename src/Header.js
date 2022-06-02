@@ -26,7 +26,7 @@ export default function Header() {
             <div>
               <a className="navigation-link" href="/" onClick={(event) => {
                   event.preventDefault(); 
-                  navigate('/botinfo');
+                  navigate('/prototonbot');
               }}>
                   Discord Bot
               </a>
@@ -63,7 +63,7 @@ export default function Header() {
               )
             }
             {
-              pathname === "/botinfo" && (
+              pathname === "/prototonbot" && (
                 <>
                   <div>
                     <a className="navigation-link" href="#info">Info</a>
