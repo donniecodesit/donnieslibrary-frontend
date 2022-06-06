@@ -1,0 +1,252 @@
+[
+  {
+    "info": {
+      "aliases": ["botinfo"],
+      "tip": "Get some information about the bot, and some useful links."
+    },
+    "serverinfo": {
+      "aliases": [],
+      "tip": "Get some information about the current server."
+    },
+    "help": {
+      "aliases": ["commands"],
+      "tip": "View the categories, descriptions, and aliases of all available commands."
+    },
+    "simonsays": {
+      "aliases": [],
+      "tip": "Get a response from the bot, repeating exactly what was said."
+    },
+    "ping": {
+      "aliases": [],
+      "tip": "Get the ms timing it took the bot to process your ping."
+    },
+    "botinvite": {
+      "aliases": [],
+      "tip": "Receive an invite link for the bot."
+    }
+  },
+  {
+    "hug": {
+      "aliases": [],
+      "tip": "Tag a user and give them a hug!"
+    },
+    "nuzzle": {
+      "aliases": ["boop"],
+      "tip": "Tag a user and boop/nuzzle them!"
+    },
+    "ship": {
+      "aliases": ["love%"],
+      "tip": "Tag a user and see your compatability!"
+    },
+    "loveme": {
+      "aliases": ["protolove"],
+      "tip": "Get some fuzzy lovin' from PrototonBot!"
+    },
+    "noticeme": {
+      "aliases": ["senpai"],
+      "tip": "Get noticed by Senpai PrototonBot!"
+    },
+    "coinflip": {
+      "aliases": ["flipacoin", "flipcoin"],
+      "tip": "Flip a coin and get heads or tails!"
+    },
+    "punish": {
+      "aliases": [],
+      "tip": "Punish a user for being bad, or put your own reason!"
+    },
+    "lewdpunish": {
+      "aliases": ["lpunish"],
+      "tip": "Punish a user for being lewd!"
+    },
+    "yeet": {
+      "aliases": [],
+      "tip": "Yeet a user outta here like an empty soda can!"
+    },
+    "lick": {
+      "aliases": [],
+      "tip": "Tag a user and give them a friendly lick!"
+    },
+    "gamble": {
+      "aliases": ["bet"],
+      "tip": "Bet Protobucks and get either 0x to 3.75x your bet back!"
+    },
+    "she": {
+      "aliases": [],
+      "tip": "Shé. :nail_care:"
+    },
+    "sass": {
+      "aliases": [],
+      "tip": "hAvE ThE BoT RePeAt yOuR MeSsAgE WiTh sAsS!"
+    }
+  },
+  {
+    "profile": {
+      "aliases": ["currency", "bank", "account", "me", "money"],
+      "tip": "View your profile/card, or somebody else's."
+    },
+    "wallet": {
+      "aliases": [],
+      "tip": "View your profile/card in a very simple form."
+    },
+    "inventory": {
+      "aliases": ["bag", "bags", "items"],
+      "tip": "View what items you currently have in your inventory."
+    },
+    "daily": {
+      "aliases": [],
+      "tip": "Earn some extra Protobucks once per day!"
+    },
+    "pat": {
+      "aliases": ["pet"],
+      "tip": "Give a user a pat once per day!"
+    },
+    "transfer": {
+      "aliases": ["send"],
+      "tip": "Send Protobucks to another user!"
+    },
+    "setprofile": {
+      "aliases": ["description", "profiledesc", "setdesc"],
+      "tip": "Sets the description on your profile. (240 char limit)"
+    },
+    "leaderboard": {
+      "aliases": ["top"],
+      "tip": "View the top 15 users for Protobucks or Levels."
+    },
+    "partnerup": {
+      "aliases": ["setpartner", "partner", "marry"],
+      "tip": "Set your partner. Mutuals get 5% boosted Chat XP and Protobucks."
+    },
+    "partnerdown": {
+      "aliases": ["removepartner", "unpartner", "divorce"],
+      "tip": "Remove your previously set partner."
+    },
+    "settheme": {
+      "aliases": ["theme", "changetheme"],
+      "tip": "Set your profile theme to one that you own."
+    }
+  },
+  {
+    "store": {
+      "aliases": ["shop"],
+      "tip": "View roles, effects, and items available for purchase!"
+    },
+    "upgrade": {
+      "aliases": [],
+      "tip": "Use your coins to upgrade stats."
+    },
+    "buy": {
+      "aliases": ["purchase", "redeem", "get"],
+      "tip": "Purchase items listed from the store."
+    },
+    "chopdown": {
+      "aliases": ["chop"],
+      "tip": "Use an axe to get forestry items."
+    },
+    "mine": {
+      "aliases": [],
+      "tip": "Use a pickaxe to get mineral items."
+    },
+    "salvage": {
+      "aliases": [],
+      "tip": "Use a wrench to get mechanical items."
+    }
+  },
+  {
+    "hope": {
+      "aliases": [],
+      "tip": "Get a hopeful sprite from the Danganronpa 1 Cast."
+    },
+    "despair": {
+      "aliases": [],
+      "tip": "Get a despairful sprite from the Danganronpa 1 Cast."
+    },
+    "hope2": {
+      "aliases": [],
+      "tip": "Get a hopeful sprite from the Danganronpa 2 Cast."
+    },
+    "despair2": {
+      "aliases": [],
+      "tip": "Get a despairful sprite from the Danganronpa 2 Cast."
+    },
+    "yasqueen": {
+      "aliases": [],
+      "tip": "Get a random image of Junko Enoshima."
+    },
+    "kamakura": {
+      "aliases": [],
+      "tip": "Get a GIF related to Izuru Kamakura."
+    },
+    "explode": {
+      "aliases": [],
+      "tip": "Get a random exploding GIF."
+    }
+  },
+  {
+    "8ball": {
+      "aliases": [],
+      "tip": "Get a random response to your question from an 8 ball."
+    },
+    "mood": {
+      "aliases": [],
+      "tip": "Get a response with a random mood and emoji."
+    },
+    "roll": {
+      "aliases": [],
+      "tip": "Roll a tabletop themed die of your choice."
+    },
+    "murdering": {
+      "aliases": [],
+      "tip": "Get a scenario of the Wulfonronpa Series Cast."
+    },
+    "murdering-rp": {
+      "aliases": [],
+      "tip": "Get a scenario of the Wulfonronpa RP Cast."
+    },
+    "murdering-all": {
+      "aliases": [],
+      "tip": "Get a scenario of both casts listed above combined."
+    }
+  },
+  {
+    "enable": {
+      "aliases": ["enablechannel", "addchannel"],
+      "tip": "Tag a channel (or none for the current) to enable commands for users."
+    },
+    "disable": {
+      "aliases": ["disablechannel", "removechannel"],
+      "tip": "Tag a channel (or none for the current) to disable commands for users."
+    },
+    "logchannel": {
+      "aliases": ["log", "logging"],
+      "tip": "Tag a channel (or none for the current) to set the log channel for the bot."
+    },
+    "prefix": {
+      "aliases": ["setprefix", "changeprefix"],
+      "tip": "Change the server's prefix for commands."
+    },
+    "privacy": {
+      "aliases": [],
+      "tip": "Choose whether or not your server is considered public or private. (Features TBA)"
+    },
+    "levelups": {
+      "aliases": ["levelupmessages", "levelmessages"],
+      "tip": "Enable or Disable Level-Up Messages for this server."
+    },
+    "togglewelcomes": {
+      "aliases": [],
+      "tip": "Enable or Disable Weclome Messages for this server."
+    },
+    "welcomechannel": {
+      "aliases": [],
+      "tip": "Tag a channel (or none for the current) to set the welcome channel for the bot."
+    },
+    "massrolecheck": {
+      "aliases": [],
+      "tip": "Get a list of the top 15 users in your server with the most roles."
+    },
+    "purge": {
+      "aliases": ["prune"],
+      "tip": "Purge 1 up to 100 messages in a channel."
+    }
+  }
+]

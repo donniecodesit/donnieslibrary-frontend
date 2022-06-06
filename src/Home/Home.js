@@ -1,18 +1,18 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Games from '../Games/_Games';
-import About from '../About/_About';
+import Portfolio from '../Portfolio/_Portfolio';
 import BotInfoPage from '../BotInfo/BotInfoPage';
 const secret = process.env.REACT_APP_SECRET;
 
 export default function Home() {
   return (
     <Routes>
-        <Route path={"/"} element={<p style={{textAlign: 'right', margin: '40px', fontWeight: 'bold', fontSize: '30px'}}>⬆️ Click a link above to get started! ⬆️</p>} />
+        <Route path={"/"} element={<Navigate to="/portfolio" replace />}/>
         <Route path={"/games"} element={<Games admin={false} />} />
         <Route path={`/games/${secret}`} element={<Games admin={true} />} />
-        <Route path={"/portfolio"} element={<About />} />
-        <Route path={"/botinfo"} element={<BotInfoPage />} />
+        <Route path={"/portfolio"} element={<Portfolio />} />
+        <Route path={"/prototonbot"} element={<BotInfoPage />} />
     </Routes>
   )
 }

@@ -3,9 +3,9 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import ContactMe from "./ContactMe";
-import './_About.css';
+import './_Portfolio.css';
 
-export default function About() {
+export default function Portfolio() {
   return (
     <div className="Portfolio">
       <main>
