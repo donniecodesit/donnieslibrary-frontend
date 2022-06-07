@@ -1,5 +1,5 @@
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaStarHalf, FaHeart } from "react-icons/fa";
 const hexValues = ['5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
 
 export default function GamesList({ games }) {
@@ -7,6 +7,9 @@ export default function GamesList({ games }) {
     <div className="game-list">
       {games.length > 0 &&
         games.map((game) => {
+          const stars = Math.floor(game.rating);
+          const halfStar = String(game.rating).endsWith(".5");
+          const legendary = (stars === 5 && halfStar);
           let hex = "";
           for (let i = 0; i < 6; i++) { hex += hexValues[Math.floor(Math.random() * hexValues.length)] };
           return (
@@ -20,7 +23,10 @@ export default function GamesList({ games }) {
                   <div className="game-release">{game.game_release}</div>
                   <div className="game-platform">{game.platform}</div>
                   <div className="game-mode">{game.multiplayer ? "Mutliplayer" : "Singleplayer"}</div>
-                  <div className="game-rating">{Array(game.rating).fill().map((_, i) => (<FaStar color="gold" key={i} />))}</div>
+                  { legendary
+                    ? <div className="game-rating">{Array(stars).fill().map((_, i) => (<FaHeart color="#BD6AFF" key={i} />))}</div>
+                    : <div className="game-rating">{Array(stars).fill().map((_, i) => (<FaStar color="gold" key={i} />))}{halfStar && <FaStarHalf color="gold"/>}</div>
+                  }
                 </div>
               </div>
             </div>
