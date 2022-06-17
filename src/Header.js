@@ -41,12 +41,12 @@ export default function Header() {
               </a>
             </div>
             <div>
-              <a className="navigation-link" href="/prototonbot" onClick={handleClick}>
+              <a className={`navigation-link${pathname === "/prototonbot" ? "-active" : ""}`} href="/prototonbot" onClick={handleClick}>
                   Discord Bot
               </a>
             </div>
             <div>
-              <a className="navigation-link" href="/games" onClick={handleClick}>
+              <a className={`navigation-link${pathname === "/games" ? "-active" : ""}`} href="/games" onClick={handleClick}>
                   Game Library
               </a>
             </div>

@@ -7,15 +7,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   color: white;
+  background-image: url("https://cdn.wallpapersafari.com/68/82/PvDEwd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-body {
-  background-image: url("https://cdn.wallpapersafari.com/68/82/PvDEwd.jpg");
 }
 
 .link-active {
@@ -28,7 +28,7 @@ body {
 }
 
 .navigation-link-active {
-  color: #add9ff;
+  color: #cae6ff;
 }
 
 .navigation-link:hover {
@@ -40,6 +40,10 @@ body {
 }
 
 @media all and (max-width: 600px) {
+  body {
+    background-image: url("https://img.wallpapersafari.com/phone/750/1334/68/82/PvDEwd.jpg");
+  }
+  
   .header-container {
     justify-content: space-around;
     flex-direction: column;
