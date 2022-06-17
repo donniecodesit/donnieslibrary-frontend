@@ -1,6 +1,8 @@
 import React from "react";
 import { FaStar, FaStarHalf, FaHeart } from "react-icons/fa";
-const hexValues = ['5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+import img_loading from "../Images/loadingimg.png";
+const hexValues = ['5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+
 
 export default function GamesList({ games }) {
   return (
@@ -13,7 +15,7 @@ export default function GamesList({ games }) {
           let hex = "";
           for (let i = 0; i < 6; i++) { hex += hexValues[Math.floor(Math.random() * hexValues.length)] };
           return (
-            <div className="game-card" key={game.game_id} style={{border: `4px solid #${hex}`}}>
+            <div className="game-card" key={game.game_id} style={{border: `4px solid #${hex}`, backgroundImage: `url("${img_loading}")`, backgroundSize: "cover"}}>
               <img className="game-image" src={game.game_image} alt={game.game_title} />
               <div className="game-info">
                 <h3 className="game-main game-title">
