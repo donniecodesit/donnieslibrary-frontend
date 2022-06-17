@@ -26,20 +26,9 @@ export default function Skills() {
           <p className="portfolio-p mb-0" style={{ fontWeight: "bold" }}>
             Other:
           </p>
-          <ul className="portfolio-ul" style={{ listStyle: "none", padding: "0px" }}>
-            <li className="portfolio-li">
-              Kdenlive <i>(Video Editing)</i>
-            </li>
-            <li className="portfolio-li">
-              Paint.NET <i>(Image Editing)</i>
-            </li>
-            <li className="portfolio-li">
-              Substance Painter <i>(Model Texturing)</i>
-            </li>
-            <li className="portfolio-li">
-              Unity <i>(VRChat Publishing)</i>
-            </li>
-          </ul>
+          <p className="portfolio-p mt-0">
+            Kdenlive <i>(Video Editing)</i>, Paint.NET <i>(Image Editing)</i><br/>Substance Painter <i>(Model Texturing)</i>, Unity <i>(VRChat Publishing)</i>
+          </p>
         </div>
       </section>
     </article>

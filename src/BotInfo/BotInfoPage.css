@@ -54,7 +54,7 @@ ul {
   padding: 0.5rem;
 }
 
-li {
+.info-box ul li {
   border: 1px solid white;
   margin: 0.5rem;
   padding: 0.5rem;
