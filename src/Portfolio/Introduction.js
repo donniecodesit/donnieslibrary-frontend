@@ -4,14 +4,7 @@ export default function Introduction() {
   return (
     <article className="container-fluid" id="intro">
       <section className="InfoRow">
-        <div className="col-lg-5">
-          <img
-            src="https://avatars.githubusercontent.com/u/91988909?v=4"
-            className="border border-secondary rounded-circle"
-            alt="Donovan"
-          />
-        </div>
-        <div className="col-lg-7">
+        <div>
           <h2 className="portfolio-h2">Looking for a Web Developer?</h2>
           <h3 className="portfolio-h3">Here's my introduction!</h3>
           <p className="portfolio-p">

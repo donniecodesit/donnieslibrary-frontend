@@ -5,8 +5,8 @@
 .Portfolio-link,
 .portfolio-li,
 .portfolio-ul {
-  font-family: "Changa", cursive;
-  color: white;
+  font-family: "Acme", cursive;
+  color: rgb(255, 255, 255);
 }
 
 .portfolio-h1,
@@ -15,7 +15,7 @@
 .portfolio-p,
 .portfolio-li,
 .portfolio-ul {
-  text-shadow: 2px 2px #1c0869;
+  text-shadow: 2px 2px #0e0531;
 }
 
 .portfolio-h1 {
@@ -44,13 +44,11 @@ img {
 }
 
 .ico {
-  width: 6rem;
+  width: 4rem;
 }
 
 .Portfolio {
   text-align: center;
-  background-color: #cccbe4;
-  background-image: url("https://i.pinimg.com/originals/b6/bf/b0/b6bfb01a2773dec45c3e6ff98c484131.jpg");
   background-size: 100%;
   background-attachment: fixed;
   padding-bottom: 20px;
@@ -65,19 +63,18 @@ img {
   color: white;
 }
 
+.Portfolio main {
+  display: flex;
+}
+
+main article {
+  padding: 20px;
+}
+
 .project-link {
   margin: auto;
   font-size: 18px;
   margin-top: -10px;
-}
-
-.navigation-link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.navigation-link:hover {
-  color: #72b7f4;
 }
 
 .InfoRow {
@@ -86,8 +83,17 @@ img {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px 10px 20px;
-  margin: 0 10vw;
+  margin: 0 2vw 0 1vw;
   flex-wrap: wrap;
+}
+
+.introbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+  margin: 0 1vw 0 2vw;
 }
 
 .header-nav {
@@ -116,16 +122,37 @@ img {
 }
 
 article section {
-  background-color: rgba(43, 65, 165, 0.205);
+  background-color: #4e48ce6c;
   border-radius: 30px;
   margin: 0 auto;
 }
 
-main article {
-  padding: 20px;
+.project-row {
+  display: flex;
+  margin: 1rem;
+  border: 1px solid white;
 }
 
-@media all and (max-width: 860px) {
+.project-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-title,
+.project-link {
+  margin: 5px;
+}
+
+.project-li {
+  font-size: 16px;
+}
+
+.project-image {
+  margin: 10px;
+}
+
+@media all and (max-width: 786px) {
   .InfoRow {
     flex-direction: column;
     margin: 0 2vw;
@@ -146,24 +173,17 @@ main article {
 
   .portfolio-p,
   .portfolio-li,
-  .portfolio-ul {
+  .portfolio-ul,
+  .project-li {
     font-size: 12px;
   }
-}
 
-@media all and (max-width: 600px) {
-  .header-container {
-    justify-content: space-around;
+  .Portfolio main,
+  .project-info {
     flex-direction: column;
   }
 
-  .header-nav {
-    flex-direction: column;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .header-start {
-    flex-direction: column;
+  .project-row {
+    flex-direction: column-reverse;
   }
 }

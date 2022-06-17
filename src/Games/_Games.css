@@ -1,7 +1,3 @@
-body {
-  background-image: url("https://scutumetlorica.com/wp-content/uploads/2018/02/loopable-tileable-stars-pattern-realistic-stars-slowly-twinkle-in-the-night-sky-seamless-tile-can-be-combined-into-8k-or-larger-frame-by-placing-clip-copies-side-by-side_vkpg6uy2__F0000.png");
-}
-
 a {
   color: #c6fdfc;
 }
@@ -94,7 +90,7 @@ form {
 .title {
   font-size: 72px;
   text-align: center;
-  padding: 2rem;
+  padding-top: 1rem;
   margin: 0;
   font-family: "Kaushan Script", cursive;
 }
