@@ -8,7 +8,7 @@ body {
   font-size: 18px;
   color: white;
   background-image: url("https://cdn.wallpapersafari.com/68/82/PvDEwd.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -37,6 +37,25 @@ code {
 
 * {
   user-select: none;
+}
+
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  left: 20px; 
+  z-index: 99;
+  border: none; 
+  background-color: rgb(88, 71, 216);
+  color: white;
+  cursor: pointer; 
+  padding: 10px;
+  border-radius: 10px; 
+  font-size: 14px; 
+}
+
+#topBtn:hover {
+  background-color: rgb(156, 156, 156); 
 }
 
 @media all and (max-width: 600px) {
