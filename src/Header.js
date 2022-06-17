@@ -4,6 +4,26 @@ import { useNavigate, useLocation } from "react-router-dom";
 export default function Header() {
   let navigate = useNavigate();
   let {pathname} = useLocation();
+
+  const handleClick = (event, page) => {
+    event.preventDefault();
+    const hrefArray = event.target.href.split("/");
+    const href = hrefArray[hrefArray.length - 1];
+    switch(href) {
+      case "portfolio":
+        navigate('/portfolio');
+        break;
+      case "prototonbot":
+        navigate("/prototonbot");
+        break;
+      case "games":
+        navigate("/games");
+        break;
+      default:
+        navigate("/");
+    }
+  }
+
   return (
     <div className="container-fluid my-2">
       <div className="header-container">
@@ -16,26 +36,17 @@ export default function Header() {
         <div className="col-5" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <div className="header-nav">
             <div>
-              <a className="navigation-link" href="/portfolio" onClick={(event) => {
-                  event.preventDefault(); 
-                  navigate('/portfolio');
-              }}>
+              <a className={`navigation-link${pathname === "/portfolio" ? "-active" : ""}`} href="/portfolio" onClick={handleClick}>
                   Portfolio
               </a>
             </div>
             <div>
-              <a className="navigation-link" href="/" onClick={(event) => {
-                  event.preventDefault(); 
-                  navigate('/prototonbot');
-              }}>
+              <a className="navigation-link" href="/prototonbot" onClick={handleClick}>
                   Discord Bot
               </a>
             </div>
             <div>
-              <a className="navigation-link" href="/" onClick={(event) => {
-                  event.preventDefault(); 
-                  navigate('/games');
-              }}>
+              <a className="navigation-link" href="/games" onClick={handleClick}>
                   Game Library
               </a>
             </div>
@@ -45,19 +56,19 @@ export default function Header() {
               pathname === "/portfolio" && (
                 <>
                   <div>
-                    <a className="navigation-link" href="#intro">Intro</a>
+                    <a className="navigation-link" href="#contact">Contact</a>
                   </div>
                   <div>
-                    <a className="navigation-link" href="#about">About</a>
+                    <a className="navigation-link" href="#intro">Intro</a>
                   </div>
                   <div>
                     <a className="navigation-link" href="#skills">Skills</a>
                   </div>
                   <div>
-                    <a className="navigation-link" href="#projects">Projects</a>
+                    <a className="navigation-link" href="#about">About</a>
                   </div>
                   <div>
-                    <a className="navigation-link" href="#contact">Contact</a>
+                    <a className="navigation-link" href="#projects">Projects</a>
                   </div>
                 </>
               )

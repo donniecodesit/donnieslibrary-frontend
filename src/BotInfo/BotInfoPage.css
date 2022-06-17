@@ -1,12 +1,15 @@
+.dfgdfg {
+  font-size: 19px;
+}
+
+.kjfkjf {
+  font-size: 19px;
+}
+
 .info-box > div > :nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.page {
-  background-image: url("https://wallpaperaccess.com/full/3053366.png");
-  background-repeat: repeat;
 }
 
 .page-content {
@@ -31,7 +34,7 @@
   padding: 0.5rem;
   border: 2px solid black;
   box-shadow: 4px 3px 1px 1px black;
-  background-color: rgba(114, 48, 207, 0.466);
+  background-color: #8e59ff6d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,9 +46,11 @@
 
 .botinfo {
   text-align: center;
-  background-color: rgba(83, 28, 160, 0.466);
-  border-radius: 3%;
+  border: solid #8d59ff;
+  border-radius: 70px;
   padding: 1rem;
+  background-image: url("https://wallpaperaccess.com/full/3053366.png");
+  background-repeat: repeat;
 }
 
 ul {
@@ -62,8 +67,7 @@ ul {
 
 .hover {
   cursor: pointer;
-  text-shadow: 2px 2px #0183d3;
-  user-select: none;
+  text-shadow: 2px 2px #000000;
 }
 
 .my-table {

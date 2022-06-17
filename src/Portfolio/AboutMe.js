@@ -1,11 +1,11 @@
 import React from "react";
-import image from "../Images/phoenixnight.png";
+import img_phoenix from "../Images/phoenixnight.png";
 
 export default function AboutMe() {
   return (
     <article className="container-fluid" id="about">
       <section className="InfoRow">
-        <div className="col-lg-7">
+        <div className="col-lg-8">
           <h2 className="portfolio-h2">About Me:</h2>
           <p className="portfolio-p">
             Some of what I've learned is self-taught, including some core
@@ -38,8 +38,8 @@ export default function AboutMe() {
             gotten paid to do texture work commissions for people online.
           </p>
         </div>
-        <div className="col-lg-5">
-          <img src={image} alt="pink square" className="rounded" />
+        <div className="col-lg-4">
+          <img src={img_phoenix} alt="pink square" className="rounded ccc" />
         </div>
       </section>
     </article>

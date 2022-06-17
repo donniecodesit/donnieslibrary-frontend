@@ -13,3 +13,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-image: url("https://cdn.wallpapersafari.com/68/82/PvDEwd.jpg");
+}
+
+.link-active {
+  color: red;
+}
+
+.navigation-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-link-active {
+  color: #add9ff;
+}
+
+.navigation-link:hover {
+  color: #72b7f4;
+}
+
+* {
+  user-select: none;
+}
+
+@media all and (max-width: 600px) {
+  .header-container {
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .header-start {
+    flex-direction: column;
+  }
+}
