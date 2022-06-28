@@ -35,10 +35,6 @@ code {
   color: #72b7f4;
 }
 
-* {
-  user-select: none;
-}
-
 #topBtn {
   display: none; 
   position: fixed; 
@@ -56,6 +52,10 @@ code {
 
 #topBtn:hover {
   background-color: rgb(156, 156, 156); 
+}
+
+img, .navigation-link, .navigation-link-active, .hover, #topBtn {
+  user-select: none;
 }
 
 @media all and (max-width: 600px) {

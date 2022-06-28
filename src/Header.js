@@ -31,7 +31,7 @@ export default function Header() {
     <div className="container-fluid my-2">
       <div className="header-container">
         <div className="col-5 header-start">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" className="header-icon" alt="react logo"/>
+          <img src="https://stickershop.line-scdn.net/stickershop/v1/product/1204504/LINEStorePC/main.png" className="header-icon" alt="website logo"/>
           <h1 className="portfolio-h1">All About Donnie!</h1>
         </div>
         <div className="col-7" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
