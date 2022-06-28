@@ -30,3 +30,15 @@ export async function createGame(game, signal) {
   const options = { method: "POST", headers, body: JSON.stringify({ data: game }), signal };
   return await fetchJson(url, options, {});
 }
+
+export async function listProjects(signal) {
+  const url = `${REACT_APP_API_URL}/projects`;
+  const options = { method: "GET", headers, signal };
+  return await fetchJson(url, options, {});
+}
+
+export async function readProject(id, signal) {
+  const url = `${REACT_APP_API_URL}/projects/${id}`;
+  const options = { method: "GET", headers, signal };
+  return await fetchJson(url, options, {});
+}

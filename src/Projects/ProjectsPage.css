@@ -1,0 +1,59 @@
+.project-box, .project-left, .project-right {
+    display: flex;
+}
+
+.project-box {
+    width: 90%;
+    margin: 10px;
+}
+
+.project-left {
+    justify-content: flex-end;
+}
+
+.project-right {
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.project-right h1 {
+    border-bottom: 4px solid white;
+    text-align: left;
+}
+
+.project-links a {
+    margin: 0 10px 0 0;
+}
+
+.project-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media all and (max-width: 768px) {
+    .project-box {
+        flex-direction: column;
+    }
+
+    .project-right {
+        align-items: center;
+    }
+
+    .project-right h3, .project-right h1 {
+        text-align: center;
+    }
+
+    .project-left {
+        justify-content: center;
+    }
+
+    .project-left img {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+    }
+    
+}
+  

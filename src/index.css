@@ -78,3 +78,10 @@ code {
     flex-direction: column;
   }
 }
+
+@media all and (max-width: 810px) {
+  .navigation-link, .navigation-link-active {
+    font-size: 18px;
+  }
+}
+

@@ -19,7 +19,7 @@
 }
 
 .portfolio-h1 {
-  font-size: 56px;
+  font-size: 48px;
   margin: 0;
   text-align: center;
 }
@@ -100,8 +100,12 @@ main article {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-wrap: wrap;
   gap: 1rem;
+}
+
+.header-nav div {
+  text-align: center;
+  margin: 0;
 }
 
 .header-container {
