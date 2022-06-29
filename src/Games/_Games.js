@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { listGames } from "../utils/api";
+import { listObjectsFromAPI } from "../utils/api";
 import GamesList from "./GamesList";
 import NewGame from "./NewGame";
 import "./_Games.css";
@@ -14,7 +14,7 @@ export default function Games({ admin }) {
     async function loadGames() {
       setError([]);
       setLoaded(false);
-      listGames(abortController.signal)
+      listObjectsFromAPI(abortController.signal, "games")
         .then((res) => {
           setGames(res.sort((gameA, gameB) => gameB.rating - gameA.rating));
           setLoaded(true);

@@ -19,26 +19,20 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
-export async function listGames(signal) {
-  const url = `${REACT_APP_API_URL}/games`;
-  const options = { method: "GET", headers, signal };
-  return await fetchJson(url, options, {});
-}
-
 export async function createGame(game, signal) {
   const url = `${REACT_APP_API_URL}/games`;
   const options = { method: "POST", headers, body: JSON.stringify({ data: game }), signal };
   return await fetchJson(url, options, {});
 }
 
-export async function listProjects(signal) {
-  const url = `${REACT_APP_API_URL}/projects`;
+export async function listObjectsFromAPI(signal, router) {
+  const url = `${REACT_APP_API_URL}/${router}`;
   const options = { method: "GET", headers, signal };
   return await fetchJson(url, options, {});
 }
 
-export async function readProject(id, signal) {
-  const url = `${REACT_APP_API_URL}/projects/${id}`;
+export async function readObjectFromAPI(id, signal, router) {
+  const url = `${REACT_APP_API_URL}/${router}/${id}`;
   const options = { method: "GET", headers, signal };
   return await fetchJson(url, options, {});
 }

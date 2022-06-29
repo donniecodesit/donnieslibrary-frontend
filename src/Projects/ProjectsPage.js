@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { listProjects } from "../utils/api";
+import { listObjectsFromAPI } from "../utils/api";
 import ListProjects from "./ListProjects";
 import "./ProjectsPage.css";
 
@@ -13,7 +13,7 @@ export default function Projets() {
     async function loadProjects() {
       setError([]);
       setLoaded(false);
-      listProjects(abortController.signal)
+      listObjectsFromAPI(abortController.signal, "projects")
         .then((res) => {
           setProjects(res.sort((projA, projB) => projB['index-priority'] - projA['index-priority']));
           setLoaded(true);
