@@ -25,6 +25,12 @@ export async function createGame(game, signal) {
   return await fetchJson(url, options, {});
 }
 
+export async function createComment(comment, signal) {
+  const url = `${REACT_APP_API_URL}/comments`;
+  const options = { method: "POST", headers, body: JSON.stringify({ data: comment }), signal };
+  return await fetchJson(url, options, {});
+}
+
 export async function listObjectsFromAPI(signal, router) {
   const url = `${REACT_APP_API_URL}/${router}`;
   const options = { method: "GET", headers, signal };
