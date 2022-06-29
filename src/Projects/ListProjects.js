@@ -10,7 +10,13 @@ function ListProjects({ projects }) {
             return (
                 <div className="project-box" key={project.id}>
                     <div className="project-left col-md-4 col-lg-4">
-                        <img className="project-image" src={`./project_images/${project.id}.png`} alt={`${project.title}`} />
+                        <img 
+                            src={`./project_images/${project.id}.png`} 
+                            alt={`${project.title}`} 
+                            style={{
+                                width: "100%"
+                            }}
+                        />
                     </div>
                     <div className="project-right col-md-8 col-lg-8">
                         <h1 className="portfolio-h1">{project.title}</h1>
