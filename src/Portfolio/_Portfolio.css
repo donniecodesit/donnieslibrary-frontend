@@ -67,7 +67,7 @@ img {
 
 .Portfolio main {
   display: flex;
-  margin:  0 5%;
+  margin: 0 5%;
 }
 
 main article {
@@ -158,6 +158,55 @@ article section {
   margin: 10px;
 }
 
+.comment,
+.comment p {
+  text-align: left;
+  background-color: #4e48ce6c;
+  border-radius: 15px;
+}
+
+.comment {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.comment p {
+  margin: 2px;
+  padding: 5px;
+}
+
+.comments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.comment-form {
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-form .row {
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-form .row input, .comment-form .row select {
+  width: 45%;
+}
+
+.comment-form textarea {
+  width: 100%;
+}
+
 @media all and (max-width: 786px) {
   .InfoRow {
     flex-direction: column;
@@ -191,5 +240,13 @@ article section {
 
   .project-row {
     flex-direction: column-reverse;
+  }
+
+  .comment-form .row {
+    flex-direction: column;
+  }
+
+  .comment-form .row input {
+    width: 80%;
   }
 }
