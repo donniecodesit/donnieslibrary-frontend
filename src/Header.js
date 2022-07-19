@@ -27,14 +27,64 @@ export default function Header() {
     }
   }
 
+  const returnLinks = () => {
+    switch (pathname) {
+      case "/portfolio":
+        return (
+          <div className="header-nav" style={{borderTop: "1px solid #d0abfa", paddingTop: "10px"}}>
+            <div>
+              <a className="navigation-link" href="#contact">Contact</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#intro">Intro</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#skills">Skills</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#about">About</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#projects">Projects</a>
+            </div>
+          </div>
+        )
+      case "/prototonbot":
+        return (
+          <div className="header-nav" style={{borderTop: "1px solid #d0abfa", paddingTop: "10px"}}>
+            <div>
+              <a className="navigation-link" href="#info">Info</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#usage">Usage</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#features">Features</a>
+            </div>
+            <div>
+              <a className="navigation-link" href="#commands">Commands</a>
+            </div>
+          </div>
+        )
+      default:
+        return (
+          <div className="header-nav" style={{borderTop: "1px solid #d0abfa", paddingTop: "10px"}}>
+            <div>
+              <a className="navigation-link invisible" href="#header">Top</a>
+            </div>
+          </div>
+        );
+    }
+  }
+
   return (
-    <div className="container-fluid my-2">
+    <div className="container-fluid my-2 slideFromTop" id="header">
       <div className="header-container">
-        <div className="col-5 header-start">
-          <img src="https://stickershop.line-scdn.net/stickershop/v1/product/1204504/LINEStorePC/main.png" className="header-icon" alt="website logo"/>
-          <h1 className="portfolio-h1">All About Donnie!</h1>
+        <div className="col-lg-5 col-md-5 header-start slideFromLeft">
+          <img src={"./project_images/websitelogo.png"} className="header-icon" alt="website logo"/>
+          <h1 className="header-title">All About Donnie!</h1>
         </div>
-        <div className="col-7" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <div className="col-lg-7 col-md-7 slideFromRight" style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
           <div className="header-nav" style={{marginBottom: "10px"}}>
             <div>
               <a className={`navigation-link${pathname === "/portfolio" ? "-active" : ""}`} href="/portfolio" onClick={handleClick}>
@@ -57,45 +107,7 @@ export default function Header() {
               </a>
             </div>
           </div>
-          {
-            pathname === "/portfolio" && (
-              <div className="header-nav" style={{borderTop: "1px solid white", paddingTop: "10px"}}>
-                <div>
-                  <a className="navigation-link" href="#contact">Contact</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#intro">Intro</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#skills">Skills</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#about">About</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#projects">Projects</a>
-                </div>
-              </div>
-            )
-          }
-          {
-            pathname === "/prototonbot" && (
-              <div className="header-nav" style={{borderTop: "1px solid white", paddingTop: "10px"}}>
-                <div>
-                  <a className="navigation-link" href="#info">Info</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#usage">Usage</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#features">Features</a>
-                </div>
-                <div>
-                  <a className="navigation-link" href="#commands">Commands</a>
-                </div>
-              </div>
-            )
-          }
+          {returnLinks()}
         </div>
       </div>
     </div>

@@ -31,11 +31,8 @@ export default function Games({ admin }) {
   }, [admin]);
 
   return (
-    <div
-      className="main"
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
-      <h1 className="title">Donnie's Game Library</h1>
+    <div className="main" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <h1 className="welcome-box" style={{width: "75%", marginTop: "15px", marginBottom: "0px"}}>Donnie's Game Library</h1>
       {loaded ? (
         <>
           {error[0] && <div className="error">{error}</div>}
@@ -44,8 +41,8 @@ export default function Games({ admin }) {
         </>
       ) : (
         <>
-          <h2>Loading Game Library...</h2>
-          <img src="https://retchhh.files.wordpress.com/2015/03/loading1.gif" alt="...sdsdf" style={{ width: "30%" }} />
+          <h1 className="portfolio-h1">Loading Game Library...</h1>
+          <img src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/circular_progress_indicator_square_large.gif" alt="Loading GIF" style={{ width: "10%", marginBottom: "720px" }} />
         </>
       )}
     </div>

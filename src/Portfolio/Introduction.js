@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <article className="container-fluid" id="intro">
+    <article className="container-fluid slideFromRight" id="intro">
       <section className="InfoRow">
         <div>
           <h2 className="portfolio-h2">Looking for a Web Developer?</h2>

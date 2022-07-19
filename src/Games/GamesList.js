@@ -6,7 +6,7 @@ const hexValues = ['5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
 
 export default function GamesList({ games }) {
   return (
-    <div className="game-list">
+    <div className="game-list slideFromBottom">
       {games.length > 0 &&
         games.map((game) => {
           const stars = Math.floor(game.rating);

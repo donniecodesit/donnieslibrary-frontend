@@ -6,7 +6,7 @@ import ico_LinkedIn from "../Images/linkedin.png";
 
 export default function PhotoPane() {
   return (
-    <article className="container-fluid" id="contact">
+    <article className="container-fluid slideFromLeft" id="contact">
       <section className="introbox">
         <div>
           <img src="https://avatars.githubusercontent.com/u/91988909?v=4" className="border border-secondary rounded-circle" alt="Donovan" style={{width: "15vw"}}/>

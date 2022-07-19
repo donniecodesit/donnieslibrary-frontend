@@ -22,7 +22,8 @@ export default function BotInfoPage() {
 
   return (
     <div className="page">
-      <div className="page-content">
+      <h1 className="welcome-box" style={{width: "75%", marginTop: "15px", marginBottom: "0px"}}>Donnie's Discord Bot</h1>
+      <div className="page-content slideFromBottom">
         <div className="col">
           <div className="botinfo">
             <img

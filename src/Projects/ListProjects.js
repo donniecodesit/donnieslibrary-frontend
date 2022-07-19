@@ -8,13 +8,14 @@ function ListProjects({ projects }) {
             const projectDate = `${date.toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric' })}`;
 
             return (
-                <div className="project-box" key={project.id}>
+                <div className="project-box slideFromBottom" key={project.id}>
                     <div className="project-left col-md-4 col-lg-4">
                         <img 
                             src={`./project_images/${project.id}.png`} 
                             alt={`${project.title}`} 
                             style={{
-                                width: "100%"
+                                width: "100%",
+                                borderRadius: "20px"
                             }}
                         />
                     </div>
