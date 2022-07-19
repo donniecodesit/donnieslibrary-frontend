@@ -3,7 +3,7 @@ import img_computer from "../Images/computertools.png";
 
 export default function Skills() {
   return (
-    <article className="container-fluid" id="skills">
+    <article className="container-fluid slideFromLeft" id="skills">
       <section className="introbox">
         <div>
           <img src={img_computer} className="border border-secondary rounded-circle" alt="Donovan" style={{ width: "15vw" }}/>

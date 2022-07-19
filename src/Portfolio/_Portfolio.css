@@ -21,6 +21,7 @@
 .portfolio-h1 {
   font-size: 48px;
   margin: 0;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -50,19 +51,9 @@ img {
 .Portfolio {
   text-align: center;
   display: flex;
-  justify-content: center;
-  background-size: 100%;
-  background-attachment: fixed;
-  padding-bottom: 20px;
-}
-
-.Portfolio-header {
-  background-color: #7975f5;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  color: white;
+  margin-bottom: 10px;
 }
 
 .Portfolio main {
@@ -99,36 +90,10 @@ main article {
   margin: 0 0 0 2vw;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header-nav div {
-  text-align: center;
-  margin: 0;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.header-icon {
-  width: 6rem;
-}
-
-.header-start {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-article section {
-  background-color: #4e48ce6c;
+article section, .welcome-box {
+  background-image: linear-gradient(rgba(83, 29, 181, 0.7), rgba(59, 37, 166, 0.7));
+  box-shadow: 0px 0px 12px #ceabfa;
+  border: 1px solid #d0abfa;
   border-radius: 30px;
   margin: 0 auto;
 }
@@ -188,23 +153,37 @@ article section {
   border-radius: 30px;
   padding: 5px;
   width: 50%;
-  margin: 0 auto;
+  margin: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: none;
 }
 
-.comment-form .row {
+.commentform-who {
   align-items: center;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
-.comment-form .row input, .comment-form .row select {
+.commentform-who input, .commentform-who select {
   width: 45%;
+  text-align: center;
 }
 
 .comment-form textarea {
   width: 100%;
+  text-align: center;
+}
+
+.comment-form p {
+  margin: 0;
+  text-decoration: underline;
+}
+
+.comment-form button {
+  margin: 2px;
 }
 
 @media all and (max-width: 786px) {
@@ -242,11 +221,11 @@ article section {
     flex-direction: column-reverse;
   }
 
-  .comment-form .row {
+  .commentform-who {
     flex-direction: column;
   }
 
-  .comment-form .row input {
+  .commentform-who input {
     width: 80%;
   }
 }

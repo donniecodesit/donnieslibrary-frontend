@@ -5,7 +5,7 @@ import img_project3 from "../Images/project3.png";
 
 export default function Projects() {
   return (
-    <article className="container-fluid" id="projects">
+    <article className="container-fluid slideFromRight" id="projects">
       <section className="InfoRow">
         <div>
           <h2 className="portfolio-h2">My Projects:</h2>

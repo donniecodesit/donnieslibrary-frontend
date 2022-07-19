@@ -26,28 +26,28 @@ export default function Comments() {
   }
 
   return (
-    <article className="container-fluid" id="comments">
-      <section className="InfoRow">
+    <article className="container slideFromBottom" id="comments">
+      <section style={{width: "100%"}}>
         <div style={{ display: "flex", flexDirection: "column", width: "100%", alignItems: "center" }}>
           <h2 className="portfolio-h2">Portfolio Comments:</h2>
+          <div className="comments">
+            <ListComments/>
+          </div>
           <form action="submit" className="comment-form" onSubmit={handleSubmit}>
-            <p>Leave A Comment?</p>
-            <select name="pronouns" onChange={handleChange} value={formData.pronouns}>
-                <option value={1}>He/Him</option>
-                <option value={2}>She/Her</option>
-                <option value={3}>They/Them</option>
+            <p>Leave a comment here!</p>
+            <div className="commentform-who">
+              <select name="pronouns" onChange={handleChange} value={formData.pronouns}>
+                  <option value={1}>He/Him</option>
+                  <option value={2}>She/Her</option>
+                  <option value={3}>They/Them</option>
               </select>
-            <div className="row">
               <input required name="firstName" maxLength={12} type="text" placeholder="First Name" value={formData.firstName} onChange={handleChange}/>
               <input required name="lastName" maxLength={12} type="text" placeholder="Last Name" value={formData.lastName} onChange={handleChange}/>
             </div>
             <textarea name="comment" maxLength={140} placeholder="Your comment here..." cols="35" rows="3" value={formData.comment} onChange={handleChange}></textarea>
-            <button action="submit">Comment</button>
+            <button className="btn btn-info" action="submit">Comment</button>
             <p className="error" style={{display: `${error === "" ? "none" : "block"}`, width: "80%"}}>{error}</p>
           </form>
-          <div className="comments">
-            <ListComments/>
-          </div>
         </div>
       </section>
     </article>

@@ -34,7 +34,7 @@ export default function Projets() {
       className="main"
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
-      <h1 className="title">Donnie's Project Library</h1>
+      <h1 className="welcome-box" style={{width: "75%"}}>Donnie's Project Library</h1>
       {loaded ? (
         <>
           {error[0] && <div className="error">{error}</div>}
@@ -42,8 +42,8 @@ export default function Projets() {
         </>
       ) : (
         <>
-          <h2>Loading Project Library...</h2>
-          <img src="https://retchhh.files.wordpress.com/2015/03/loading1.gif" alt="Loading" style={{ width: "30%" }} />
+          <h1 className="portfolio-h1">Loading Project Library...</h1>
+          <img src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/circular_progress_indicator_square_large.gif" alt="Loading GIF" style={{ width: "10%", marginBottom: "720px" }} />
         </>
       )}
     </div>
