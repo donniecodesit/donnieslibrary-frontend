@@ -14,7 +14,7 @@ export default function PhotoPane() {
         <div style={{display: "flex", flexDirection: "column"}}>
           <h1 className="portfolio-h1">Donovan Laws</h1>
           <h2 className="portfolio-h2">Web Developer</h2>
-          <h3 className="portfolio-h3">21, He/Him, Phoenix AZ</h3>
+          <h3 className="portfolio-h3">22, He/Him, Phoenix AZ</h3>
           <div>
             <a href="mailto:donovanlaws@gmail.com">
                 <img className="ico" src={ico_Mail} alt="GMail Logo" />
