@@ -19,7 +19,7 @@ export default function PhotoPane() {
             <a href="mailto:donovanlaws@gmail.com">
                 <img className="ico" src={ico_Mail} alt="GMail Logo" />
             </a>
-            <a href="https://github.com/donovanlaws" target="_blank" rel="noreferrer" >
+            <a href="https://github.com/donniecodesit" target="_blank" rel="noreferrer" >
                 <img className="ico" src={ico_Git} alt="GitHub Logo" />
             </a>
             <a href="https://www.linkedin.com/in/donovanlaws/" target="_blank" rel="noreferrer" >
