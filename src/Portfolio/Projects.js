@@ -14,7 +14,7 @@ export default function Projects() {
           <div className="col-lg-8">
             <div className="project-info">
               <h3 className="project-title">PrototonBot Discord Bot</h3>
-              <a href="https://github.com/donovanlaws/PrototonBot" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
+              <a href="https://github.com/donniecodesit/PrototonBot" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
             </div>
             <ul className="portfolio-ul">
               <li className="project-li">
@@ -36,7 +36,7 @@ export default function Projects() {
           <div className="col-lg-8">
             <div className="project-info">
               <h3 className="project-title">All About Donnie</h3>
-              <a href="https://github.com/donovanlaws/donnieslibrary-frontend" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
+              <a href="https://github.com/donniecodesit/donnieslibrary-frontend" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
             </div>
             <ul className="portfolio-ul">
               <li className="project-li">
@@ -58,7 +58,7 @@ export default function Projects() {
           <div className="col-lg-8">
             <div className="project-info">
               <h3 className="project-title">Restaurant Reservation App</h3>
-              <a href="https://github.com/donovanlaws/restaurant-reservation-system" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
+              <a href="https://github.com/donniecodesit/restaurant-reservation-system" target="_blank" rel="noreferrer" className="project-link">[GitHub]</a>
             </div>
             <ul className="portfolio-ul">
               <li className="project-li">
