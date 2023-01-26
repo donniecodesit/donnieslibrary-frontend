@@ -35,6 +35,14 @@ function Games() {
 
   return (
     <div className="games-container">
+      <div className="gamesNote">
+        <h4>What's this section?</h4>
+        <p>
+          This page is for the gamers out there! Games can be a great way to
+          start a conversation (and code discussion too), so I'd like to share
+          some of my top favorites here!
+        </p>
+      </div>
       {loaded ? (
         <>
           {gamesError[0] && <div className="error">{gamesError}</div>}

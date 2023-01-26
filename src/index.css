@@ -2,8 +2,8 @@
 :root {
   --hue: 263;
 
-  --backLight: var(--hue) 14% 95%;
-  --backLight2: var(--hue) 50% 98%;
+  --backLight: var(--hue) 14% 93%;
+  --backLight2: var(--hue) 50% 99%;
   --textLight: var(--hue) 40% 5%;
   --acceLight: var(--hue) 84% 50%;
   --mutedLight: var(--hue) 30% 99%;

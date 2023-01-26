@@ -5,6 +5,19 @@
   align-items: center;
 }
 
+.gamesNote {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: hsl(var(--backColor2));
+  border-radius: 15px;
+  align-items: center;
+  width: 60vw;
+  text-align: center;
+  margin-top: 10px;
+  filter: drop-shadow(0px 0px 1px hsl(var(--textColor)));
+}
+
 .gamesList {
   padding: 1rem 0;
   width: 100%;
