@@ -1,9 +1,6 @@
 import React from "react";
 import { FaStar, FaStarHalf, FaHeart } from "react-icons/fa";
 
-// Images
-import img_loading from "../../images/loadingimg.png";
-
 function ListGames({ games }) {
   const hexValues = ["5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
 
@@ -26,7 +23,7 @@ function ListGames({ games }) {
               key={game.game_id}
               style={{
                 border: `4px solid #${hexCode}`,
-                backgroundImage: `url("${img_loading})`,
+                backgroundImage: `url(/images/loadingimg.png)`,
                 backgroundSize: "cover",
               }}
             >

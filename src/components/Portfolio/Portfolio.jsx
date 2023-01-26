@@ -3,13 +3,6 @@ import React from "react";
 // Icons
 import { SiGmail, SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
 
-// Images
-import personalPhoto from "../../images/personalshot.png";
-import phoenixNight from "../../images/phoenixnight.png";
-import project1 from "../../images/project1.png";
-import project2 from "../../images/project2.png";
-import project3 from "../../images/project3.png";
-
 // Styles
 import "./portfolio.css";
 
@@ -20,7 +13,7 @@ export default function Portfolio() {
         <div className="infoBox">
           <img
             className="personalPhoto"
-            src={personalPhoto}
+            src="/images/personalshot.png"
             alt="Camera facing Donovan"
           />
           <h1>Donovan Laws</h1>
@@ -70,7 +63,7 @@ export default function Portfolio() {
           </p>
           <hr />
           <img
-            src={phoenixNight}
+            src="/images/phoenixnight.png"
             alt="Nighttime Phoenix Arizona Landscape"
             className="phxImage"
             style={{
@@ -171,7 +164,10 @@ export default function Portfolio() {
                 </li>
               </ul>
             </div>
-            <img src={project2} alt="Screenshot of Discord Bot App" />
+            <img
+              src="/images/project2.png"
+              alt="Screenshot of Discord Bot App"
+            />
           </div>
           <div className="projectBox">
             <div className="projectInfo">
@@ -191,7 +187,7 @@ export default function Portfolio() {
                 <li>• Encouraged users like you to check out this page!</li>
               </ul>
             </div>
-            <img src={project3} alt="Screenshot of Portfolio" />
+            <img src="/images/project3.png" alt="Screenshot of Portfolio" />
           </div>
           <div className="projectBox">
             <div className="projectInfo">
@@ -215,7 +211,7 @@ export default function Portfolio() {
               </ul>
             </div>
             <img
-              src={project1}
+              src="/images/project1.png"
               alt="Screenshot of Restaurant Reservation App"
             />
           </div>
