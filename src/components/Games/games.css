@@ -1,0 +1,77 @@
+.games-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  align-items: center;
+}
+
+.gamesList {
+  padding: 1rem 0;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 32rem));
+}
+
+.gameCard {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 32rem;
+  height: 18rem;
+  margin: 6px;
+}
+
+.gameInfo {
+  position: absolute;
+  width: 100%;
+  padding: 1rem;
+  padding-bottom: 10px;
+  bottom: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.863);
+  transform: translateY(100%);
+  transition: all 0.3s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.gameCard:hover .gameInfo {
+  transform: translateY(0);
+}
+
+.gameRating {
+  display: flex;
+  align-items: center;
+}
+
+.gameRating > svg {
+  font-size: 21px;
+}
+
+.gameImage {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.gameExtra {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 530px) {
+  .gameCard {
+    width: 28.8rem;
+    height: 16.2rem;
+  }
+}

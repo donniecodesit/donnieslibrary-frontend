@@ -1,0 +1,168 @@
+.portfolio-container {
+  width: 75vw;
+  align-self: center;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.portfolio-column-a,
+.portfolio-column-b,
+.portfolio-column-c {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-column-a {
+  width: 15vw;
+}
+
+a > svg {
+  font-size: 35px;
+  margin: 0px 10px;
+}
+
+.portfolio-column-b {
+  width: 40vw;
+}
+
+.portfolio-column-c {
+  width: 15vw;
+}
+
+.portfolio-column-c > .infoBox {
+  padding-bottom: 0;
+}
+
+.infoBox {
+  background-color: hsl(var(--backColor2));
+  width: 100%;
+  margin: 15px 10px 15px 10px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 1px hsl(var(--textColor)));
+}
+
+.infoBox > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.infoBox > .projectBox {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px 30px 0px;
+  border: 1px solid hsl(var(--acceColor));
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.projectBox > .projectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+}
+
+.projectBox > img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+.projectInfo > .projectMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectInfo > ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.projectMain > h5 {
+  margin-right: 10px;
+}
+
+.personalPhoto {
+  width: 60%;
+  border-radius: 100px;
+  margin: 0 0 8px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-container {
+    width: 85vw;
+    align-self: center;
+    padding-top: 72px;
+    display: flex;
+    justify-items: center;
+  }
+
+  .portfolio-column-a {
+    width: 20vw;
+  }
+
+  .portfolio-column-b {
+    width: 40vw;
+    margin: 0 12px 0 12px;
+  }
+
+  .portfolio-column-c {
+    width: 20vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio-container {
+    width: 95vw;
+    align-self: center;
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .portfolio-column-a {
+    width: 95vw;
+  }
+
+  .portfolio-column-b {
+    width: 95vw;
+    margin: 0 0 0 0;
+  }
+
+  .portfolio-column-c {
+    width: 95vw;
+  }
+
+  .infoBox > .projectBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projectBox > .projectInfo {
+    width: 100%;
+  }
+
+  .projectBox > img {
+    width: 90%;
+    margin-left: 0;
+  }
+
+  .projectInfo > .projectMain {
+    flex-direction: column;
+  }
+
+  .projectMain > h5 {
+    margin-right: 0;
+  }
+}

@@ -1,3 +1,62 @@
+/* Lines 1 - 42 handle the global theme */
+:root {
+  --hue: 263;
+
+  --backLight: var(--hue) 14% 95%;
+  --backLight2: var(--hue) 50% 98%;
+  --textLight: var(--hue) 40% 5%;
+  --acceLight: var(--hue) 84% 50%;
+  --mutedLight: var(--hue) 30% 99%;
+
+  --backDark: var(--hue) 24% 8%;
+  --backDark2: var(--hue) 12% 12%;
+  --textDark: var(--hue) 30% 88%;
+  --acceDark: var(--hue) 84% 50%;
+  --mutedDark: var(--hue) 20% 4%;
+}
+
+:root[color-scheme="dark"] {
+  --backColor: var(--backDark);
+  --backColor2: var(--backDark2);
+  --textColor: var(--textDark);
+  --acceColor: var(--acceDark);
+  --muted: var(--mutedDark);
+  color-scheme: dark;
+}
+
+:root[color-scheme="light"] {
+  --backColor: var(--backLight);
+  --backColor2: var(--backLight2);
+  --textColor: var(--textLight);
+  --acceColor: var(--acceLight);
+  --muted: var(--mutedLight);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backColor: var(--backDark);
+    --backColor2: var(--backDark2);
+    --textColor: var(--textDark);
+    --acceColor: var(--acceDark);
+    --muted: var(--mutedDark);
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --backColor: var(--backLight);
+    --backColor2: var(--backLight2);
+    --textColor: var(--textLight);
+    --acceColor: var(--acceLight);
+    --muted: var(--mutedLight);
+    color-scheme: light;
+  }
+}
+/* End of global theme */
+
+/* Any styles added below will effect the entire page. */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,15 +65,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
-  color: white;
-  background-image: url("../public/project_images/mainbackground.png");
+  color: hsl(var(--textColor));
+  background: hsl(var(--backColor));
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 html {
-  overflow: -moz-scrollbars-vertical; 
+  overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
 }
 
@@ -23,104 +82,67 @@ code {
     monospace;
 }
 
-.link-active {
-  color: red;
-}
-
-.navigation-link {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.navigation-link-active {
-  color: #cae6ff;
-}
-
-.navigation-link:hover {
-  color: #72b7f4;
-}
-
-#topBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 20px;
-  left: 20px; 
-  z-index: 99;
-  border: none; 
-  background-color: rgb(88, 71, 216);
-  color: white;
-  cursor: pointer; 
-  padding: 10px;
-  border-radius: 10px; 
-  font-size: 14px; 
-}
-
-#topBtn:hover {
-  background-color: rgb(156, 156, 156); 
-}
-
-img, .navigation-link, .navigation-link-active, .hover, #topBtn {
-  user-select: none;
-}
-
-.header-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.header-nav div {
-  text-align: center;
-  margin: 0;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-}
-
-.header-icon {
-  width: 5rem;
-}
-
-.header-start {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.header-title {
-  font-size: 62px;
-  margin: 5px;
-  text-align: center;
-  font-family: "Acme", cursive;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px #0e0531;
-}
-
-.global-header {
-  background-image: linear-gradient(rgba(167, 132, 232, 0.7), rgba(47, 35, 102, 0.7));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  box-shadow: 0px 0px 12px #ceabfa;
-  border-bottom: 1px solid #d0abfa;
+button {
+  background: hsl(var(--acceColor));
 }
 
 footer {
   text-align: center;
-  margin: 15px;
+  margin-bottom: 35px;
 }
 
-.welcome-box {
-  font-size: 72px;
-  text-align: center;
-  font-family: "Kaushan Script", cursive;
-  margin: 15px;
-  padding: 5px;
+p {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+svg {
+  font-size: 50px;
+}
+
+a {
+  color: hsl(var(--acceColor));
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(var(--textColor));
+}
+
+hr {
+  margin: 0 0 8px 0;
+  padding: 0;
+  border: 1px solid hsl(var(--textColor));
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .invisible {
@@ -128,46 +150,21 @@ footer {
   user-select: none;
 }
 
-@media all and (max-width: 600px) {
-  body {
-    background-image: url("https://img.wallpapersafari.com/phone/750/1334/68/82/PvDEwd.jpg");
-  }
-  
-  .header-container {
-    justify-content: space-around;
-    flex-direction: column;
-  }
-
-  .header-nav {
-    flex-direction: row;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .header-start {
-    flex-direction: column;
-  }
-
-  .header-title {
-    font-size: 32px;
-  }
-
-  .welcome-box {
-    font-size: 32px;
-  }
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  border: none;
+  background-color: hsl(var(--acceColor));
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
 }
 
-@media all and (max-width: 810px) {
-  .navigation-link, .navigation-link-active {
-    font-size: 18px;
-  }
-  
-  .header-title {
-    font-size: 48px;
-  }
-
-  .welcome-box {
-    font-size: 56px;
-  }
+#topBtn:hover {
+  background-color: rgb(156, 156, 156);
 }
-
