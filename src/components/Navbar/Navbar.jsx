@@ -34,7 +34,14 @@ export default function Navbar() {
           </div>
         </div>
         <div className="navbar-content-middle">
-          <h3>Donovan's Portfolio</h3>
+          <h3>
+            Donovan's{" "}
+            {pathname === "/"
+              ? "Portfolio"
+              : pathname === "/projects"
+              ? "Projects"
+              : "???"}
+          </h3>
         </div>
         <div className="navbar-content-right">
           <div className="navigation-svg" onClick={() => navigate("/unknown")}>

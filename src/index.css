@@ -2,8 +2,8 @@
 :root {
   --_hue: 263;
 
-  --backLight: var(--_hue) 40% 93%;
-  --backLight2: var(--_hue) 25% 89%;
+  --backLight: var(--_hue) 14% 95%;
+  --backLight2: var(--_hue) 50% 98%;
   --textLight: var(--_hue) 40% 5%;
   --acceLight: var(--_hue) 84% 50%;
 
@@ -115,6 +115,16 @@ svg {
   font-size: 50px;
 }
 
+a {
+  color: hsl(var(--acceColor));
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(var(--textColor));
+}
+
 hr {
   margin: 0 0 8px 0;
   padding: 0;
@@ -139,7 +149,7 @@ hr {
   left: 20px;
   z-index: 99;
   border: none;
-  background-color: rgb(88, 71, 216);
+  background-color: hsl(var(--acceColor));
   color: white;
   cursor: pointer;
   padding: 10px;
