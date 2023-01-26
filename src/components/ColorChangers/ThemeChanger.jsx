@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // Icons
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 
-// Custom Hooks
+// Hooks
 import useLocalStorage from "../../hooks/useLocalStorage";
 
 export default function ThemeChanger() {

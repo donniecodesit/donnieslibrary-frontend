@@ -3,17 +3,17 @@ import React from "react";
 // Icons
 import { SiGmail, SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
 
-// Styles
-import "./portfolio.css";
-
+// Images
 import personalPhoto from "../../images/personalshot.png";
 import phoenixNight from "../../images/phoenixnight.png";
 import project1 from "../../images/project1.png";
 import project2 from "../../images/project2.png";
 import project3 from "../../images/project3.png";
 
-export default function Portfolio() {
+// Styles
+import "./portfolio.css";
 
+export default function Portfolio() {
   return (
     <div className="portfolio-container">
       <div className="portfolio-column-a">
@@ -162,8 +162,8 @@ export default function Portfolio() {
                   MongoDB.
                 </li>
                 <li>
-                  • Developed a chatbot application that users could interact
-                  with for entertainment purposes.
+                  • Developed a chatbot application that users can interact with
+                  for entertainment purposes.
                 </li>
                 <li>
                   • Led and communicated with a small team of developers,
@@ -171,10 +171,7 @@ export default function Portfolio() {
                 </li>
               </ul>
             </div>
-            <img
-              src={project2}
-              alt="Nighttime Phoenix Arizona Landscape"
-            />
+            <img src={project2} alt="Screenshot of Discord Bot App" />
           </div>
           <div className="projectBox">
             <div className="projectInfo">
@@ -185,7 +182,7 @@ export default function Portfolio() {
               <ul>
                 <li>
                   • Built with PERN stack to showcase my personal portfolio,
-                  giving users information to learn about me.
+                  sharing information about me and my skillset.
                 </li>
                 <li>
                   • Created a one-page functional website with multiple routes
@@ -194,10 +191,7 @@ export default function Portfolio() {
                 <li>• Encouraged users like you to check out this page!</li>
               </ul>
             </div>
-            <img
-              src={project1}
-              alt="Nighttime Phoenix Arizona Landscape"
-            />
+            <img src={project3} alt="Screenshot of Portfolio" />
           </div>
           <div className="projectBox">
             <div className="projectInfo">
@@ -221,8 +215,8 @@ export default function Portfolio() {
               </ul>
             </div>
             <img
-              src={project3}
-              alt="Nighttime Phoenix Arizona Landscape"
+              src={project1}
+              alt="Screenshot of Restaurant Reservation App"
             />
           </div>
           <hr />

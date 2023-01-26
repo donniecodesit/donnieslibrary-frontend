@@ -3,47 +3,42 @@ import { useEffect, useState } from "react";
 import { listObjectsFromAPI } from "../../utils/api";
 
 // Components
-import ListProjects from "./ListProjects";
+import ListGames from "./ListGames";
 
 // Styles
-import "./projects.css";
+import "./games.css";
 
-function Projects() {
-  const [projects, setProjects] = useState([]);
-  const [projectsErr, setProjectsErr] = useState([]);
+function Games() {
+  const [games, setGames] = useState([]);
+  const [gamesError, setGamesError] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const abortController = new AbortController();
-    async function loadProjects() {
-      setProjectsErr([]);
+    async function loadGames() {
+      setGamesError([]);
       setLoaded(false);
-      listObjectsFromAPI(abortController.signal, "projects")
+      listObjectsFromAPI(abortController.signal, "games")
         .then((result) => {
-          setProjects(
-            result.sort(
-              (projA, projB) =>
-                projB["index-priority"] - projA["index-priority"]
-            )
-          );
+          setGames(result.sort((gameA, gameB) => gameB.rating - gameA.rating));
           setLoaded(true);
         })
         .catch((error) => {
-          setProjects([]);
+          setGames([]);
           setLoaded(true);
-          setProjectsErr([error.message]);
+          setGamesError([error.message]);
         });
     }
-    loadProjects();
+    loadGames();
     return () => abortController.abort();
   }, []);
 
   return (
-    <div className="projects-container">
+    <div className="games-container">
       {loaded ? (
         <>
-          {projectsErr[0] && <div className="error">{projectsErr}</div>}
-          <ListProjects projects={projects} />
+          {gamesError[0] && <div className="error">{gamesError}</div>}
+          <ListGames games={games} />
         </>
       ) : (
         <>
@@ -59,4 +54,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Games;

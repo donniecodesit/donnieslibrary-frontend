@@ -82,7 +82,7 @@
     border-bottom: 5px solid rgba(255, 255, 255, 0);
     width: 70px;
   }
-  
+
   .navigation-svg > p.active {
     border-bottom: 5px solid white;
   }

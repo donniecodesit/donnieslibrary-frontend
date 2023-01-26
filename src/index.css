@@ -1,16 +1,18 @@
 /* Lines 1 - 42 handle the global theme */
 :root {
-  --_hue: 263;
+  --hue: 263;
 
-  --backLight: var(--_hue) 14% 95%;
-  --backLight2: var(--_hue) 50% 98%;
-  --textLight: var(--_hue) 40% 5%;
-  --acceLight: var(--_hue) 84% 50%;
+  --backLight: var(--hue) 14% 95%;
+  --backLight2: var(--hue) 50% 98%;
+  --textLight: var(--hue) 40% 5%;
+  --acceLight: var(--hue) 84% 50%;
+  --mutedLight: var(--hue) 30% 99%;
 
-  --backDark: var(--_hue) 24% 8%;
-  --backDark2: var(--_hue) 12% 12%;
-  --textDark: var(--_hue) 30% 88%;
-  --acceDark: var(--_hue) 84% 50%;
+  --backDark: var(--hue) 24% 8%;
+  --backDark2: var(--hue) 12% 12%;
+  --textDark: var(--hue) 30% 88%;
+  --acceDark: var(--hue) 84% 50%;
+  --mutedDark: var(--hue) 20% 4%;
 }
 
 :root[color-scheme="dark"] {
@@ -18,6 +20,8 @@
   --backColor2: var(--backDark2);
   --textColor: var(--textDark);
   --acceColor: var(--acceDark);
+  --muted: var(--mutedDark);
+  color-scheme: dark;
 }
 
 :root[color-scheme="light"] {
@@ -25,6 +29,8 @@
   --backColor2: var(--backLight2);
   --textColor: var(--textLight);
   --acceColor: var(--acceLight);
+  --muted: var(--mutedLight);
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +39,7 @@
     --backColor2: var(--backDark2);
     --textColor: var(--textDark);
     --acceColor: var(--acceDark);
+    --muted: var(--mutedDark);
     color-scheme: dark;
   }
 }
@@ -43,6 +50,7 @@
     --backColor2: var(--backLight2);
     --textColor: var(--textLight);
     --acceColor: var(--acceLight);
+    --muted: var(--mutedLight);
     color-scheme: light;
   }
 }

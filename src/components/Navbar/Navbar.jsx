@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 // Components
-import ThemeChanger from "../ThemeChanger/ThemeChanger";
+import ThemeChanger from "../ColorChangers/ThemeChanger";
 
 // Icons
 import {
@@ -35,19 +35,20 @@ export default function Navbar() {
         </div>
         <div className="navbar-content-middle">
           <h3>
-            Donovan's{" "}
             {pathname === "/"
-              ? "Portfolio"
+              ? "Donovan's Portfolio"
               : pathname === "/projects"
-              ? "Projects"
+              ? "Donovan's Projects"
+              : pathname === "/games"
+              ? "Donovan's Games"
               : "???"}
           </h3>
         </div>
         <div className="navbar-content-right">
-          <div className="navigation-svg" onClick={() => navigate("/unknown")}>
+          <div className="navigation-svg" onClick={() => navigate("/games")}>
             <BsFillGrid3X3GapFill />
-            <p className={pathname === "/unknown" ? "active" : "inactive"}>
-              Unknown
+            <p className={pathname === "/games" ? "active" : "inactive"}>
+              Games
             </p>
           </div>
           <div className="navigation-svg">
