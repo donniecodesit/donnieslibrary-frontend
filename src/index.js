@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 
 // Components
 import Navbar from "./components/Navbar/Navbar";
@@ -23,8 +28,10 @@ root.render(
       </header>
       <Routes>
         <Route path={"/"} element={<Portfolio />} />
+        <Route path={"/portfolio"} element={<Navigate to="/" replace />} />
         <Route path={"/projects"} element={<Projects />} />
         <Route path={"/games"} element={<Games />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <HueChanger />
       <footer>
