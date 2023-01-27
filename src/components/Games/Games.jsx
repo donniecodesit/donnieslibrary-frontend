@@ -50,7 +50,7 @@ function Games() {
         </>
       ) : (
         <>
-          <h2>Fetching...</h2>
+          <h2>Getting Games List...</h2>
           <img
             src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/circular_progress_indicator_square_large.gif"
             alt="Loading GIF"
