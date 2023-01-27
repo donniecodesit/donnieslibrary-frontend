@@ -45,6 +45,8 @@ a > svg {
   padding: 15px;
   border-radius: 20px;
   filter: drop-shadow(0px 0px 1px hsl(var(--textColor)));
+  flex-wrap: wrap;
+  word-wrap: break-word;
 }
 
 .infoBox > ul {
@@ -78,8 +80,7 @@ a > svg {
 
 .projectInfo > .projectMain {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .projectInfo > ul {
@@ -89,7 +90,7 @@ a > svg {
 }
 
 .projectMain > h5 {
-  margin-right: 10px;
+  margin: 0 7px 0 0;
 }
 
 .personalPhoto {

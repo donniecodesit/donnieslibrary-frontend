@@ -8,7 +8,7 @@ import ListProjects from "./ListProjects";
 // Styles
 import "./projects.css";
 
-function Projects() {
+export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [projectsErr, setProjectsErr] = useState([]);
   const [loaded, setLoaded] = useState(false);
@@ -58,5 +58,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;

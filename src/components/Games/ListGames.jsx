@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaStarHalf, FaHeart } from "react-icons/fa";
 
-function ListGames({ games }) {
+export default function ListGames({ games }) {
   const hexValues = ["5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
 
   return (
@@ -77,5 +77,3 @@ function ListGames({ games }) {
     </div>
   );
 }
-
-export default ListGames;

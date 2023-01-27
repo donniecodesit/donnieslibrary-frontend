@@ -1,6 +1,6 @@
 import React from "react";
 
-function ListProjects({ projects }) {
+export default function ListProjects({ projects }) {
   return projects.map((project) => {
     const [year, month, day] = project.date.split("-");
     const date = new Date(year, month, day);
@@ -21,6 +21,7 @@ function ListProjects({ projects }) {
         </div>
         <div className="projRowRight col-md-8 col-lg-8">
           <h1>{project.title}</h1>
+          <hr />
           <h5 style={{ marginTop: "15px" }}>{project.description}</h5>
           <h5>Created on: {projectDate}</h5>
           <div className="projectLinks">
@@ -38,5 +39,3 @@ function ListProjects({ projects }) {
     );
   });
 }
-
-export default ListProjects;

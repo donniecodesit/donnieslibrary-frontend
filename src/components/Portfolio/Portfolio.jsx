@@ -1,7 +1,7 @@
 import React from "react";
 
 // Icons
-import { SiGmail, SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
+import { SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
 
 // Styles
 import "./portfolio.css";
@@ -11,29 +11,25 @@ export default function Portfolio() {
     <div className="portfolio-container">
       <div className="portfolio-column-a">
         <div className="infoBox">
+          <h1>Donovan Laws</h1>
+          <h5>Software Engineer</h5>
+          <hr />
           <img
             className="personalPhoto"
             src="/images/personalshot.png"
             alt="Camera facing Donovan"
           />
-          <h1>Donovan Laws</h1>
-          <h5>Software Engineer</h5>
+
           <hr />
-          <h6>22 He/Him | Peoria, AZ</h6>
+          <h6>22 He/Him Peoria, AZ</h6>
+          <h6>donovan.laws@gmail.com</h6>
           <hr />
           <a
-            href="mailto:donovan.laws@gmail.com"
+            href="https://www.linkedin.com/in/donovanlaws/"
             target="_blank"
             rel="noreferrer"
           >
-            <SiGmail fill="#CA3737" />
-          </a>
-          <a
-            href="https://twitter.com/donovan_laws"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SiTwitter fill="#55ADEE" />
+            <SiLinkedin fill="#0274B3" />
           </a>
           <a
             href="https://github.com/donniecodesit"
@@ -43,12 +39,37 @@ export default function Portfolio() {
             <SiGithub fill="hsl(var(--textColor))" />
           </a>
           <a
-            href="https://www.linkedin.com/in/donovanlaws/"
+            href="https://twitter.com/donovan_laws"
             target="_blank"
             rel="noreferrer"
           >
-            <SiLinkedin fill="#0274B3" />
+            <SiTwitter fill="#55ADEE" />
           </a>
+        </div>
+        <div className="infoBox">
+          <h5>My Two Sides Laydown</h5>
+          <hr />
+          <p>
+            With my knowledge and experiences, I can confidently say that: I
+            enjoy working with and organizing databases or information. I've
+            managed databases in both ElephantSQL and MongoDB. I enjoy creating
+            web pages in React, both with impressive design and functionality
+            with the purpose of displaying information or solving a task. My
+            projects are usually deployed with Vercel, or GitHub Pages if it's a
+            one-page-only site. Browse my projects to see some things I've done!
+          </p>
+          <hr />
+          <p>
+            When not programming, I sometimes do the occasional game stream, and
+            can often be found playing solo or online games. You may find me as
+            a participant in a monster slaying party, a joke filled party game,
+            a jumpscare filled horror game, or breaking my fingers on some
+            rhythm games. I am fascinated by Virtual Reality and the tech
+            involved behind it, and enjoy VRChat, where I have textured,
+            scripted, and uploaded many personal avatars. I've also done texture
+            commissions for people online too!
+          </p>
+          <hr />
         </div>
       </div>
       <div className="portfolio-column-b">
@@ -76,73 +97,100 @@ export default function Portfolio() {
           <hr />
         </div>
         <div className="infoBox">
-          <h5>My Introduction & About Me!</h5>
+          <h4>My Introduction & About Me!</h4>
           <hr />
           <p>
-            I am a Software Engineer and Web Developer who is still always
-            learning and looking to learn more in development. I was born and
-            grew up in North Carolina and in 2019 moved across the country to
-            reside in Arizona with friends who supported my career path.
+            Hello there, and welcome! I'm a Software Engineer and Web Developer
+            always wanting to learn more in development and tech. Born in North
+            Carolina, I moved to Arizona in 2019 with friends who supported my
+            career path.
           </p>
           <p>
             Before I got into tech, I was a Content Creator and Streamer on
-            YouTube and Twitch, I had been working to make a career out of that
-            before I found more passion in creating applications after working
-            on personal programming projects. My YouTube audience has grown and
-            reached over 53,000 people, and while not related to tech, was super
-            critical at teaching me how to instruct, assist, and help others who
-            are having technical issues. The content I made on my channel was
-            supporting and helping users write commands for a mod engine that
-            accepted text commands with arguments.
+            YouTube and Twitch. The content I featured was about helping users
+            write commands for a mod engine using text/command scripts. While
+            not related to tech, my audience grew and reached over 53,000
+            people, and helped me learned how to instruct, assist, and help
+            others who are having technical issues.
           </p>
           <hr />
           <p>
-            During this time period in 2017 I started a Discord Bot Project in
-            JavaScript, and between 2017 and 2020 as I worked on that bot it
-            started gaining more activity and being actively used with hundreds
-            of users. In 2020, I rewrote the project in C# using Discord.NET and
-            moved from a flat-file database to a MongoDB database.
+            In 2017 I started a Discord Bot Project in JavaScript and I worked
+            on it between 2017 and 2020. By then the bot gained way more
+            activity and hundreds of users. In 2020, I rewrote the project in C#
+            using Discord.NET and moved from a flat-file database to a MongoDB
+            database. After making major changes in 2022, the database was reset
+            to accompany new changes.
           </p>
           <p>
-            In 2021 my interest in tech and web development expanded, and from
-            November 2021 to April 2022 I enrolled in and actively developed in
-            Thinkful's Software Engineering Immersion Program. Since then I have
-            learned, maintained, and improved my skills in Node, React, Express,
-            and other libraries depending on the project. From August 2022 to
-            October 2022 I was employed remotely with SPJ Solutions, with an
-            amazing team of engineers, and further improved my capabilities
+            In 2021 my interest in tech was huge, and from November 2021 to
+            April 2022 I enrolled and developed in Thinkful's Software
+            Engineering Immersion Program. Since then I have learned and
+            improved many of my skills in Node, React, Express, and other
+            supporting sub liraries. From August 2022 to October 2022, I was
+            remotely working at SPJ Solutions and further improved my skills
             during that role. The team was effected by a layoff in October 2022
             and I have been seeking employment during 2022 and 2023.
           </p>
           <hr />
         </div>
         <div className="infoBox">
-          <h5>Anything else?</h5>
+          <h4>Relevant Experience</h4>
           <hr />
-          <p>
-            With all of my knowledge combined, as well as a 5 month program,
-            ceritification of completion, and web dev experience under my belt,
-            I can confidently say I enjoy working with and organizing databases.
-            I've written databases using services like ElephantSQL and MongoDB.
-            My frontend projects have all been in React. I deploy my projects
-            using services like Vercel, and GitHub Pages when it's a one page
-            site. Please browse my projects and connect with me if you'd like
-            to!
-          </p>
+          <h5>Software Engineer at SPJ Solutions</h5>
+          <p>Aug 2022 - Oct 2022</p>
+          <ul>
+            <li>
+              • Consolidated and organized all of the styling in the codebase
+              from in-line styles to a CSS library.
+            </li>
+            <li>
+              • Optimized and cleaned up code created by developers previously
+              contributed to the codebase.
+            </li>
+            <li>
+              • Created unit tests in Jest to test various endpoints for valid
+              behavior before deployment.
+            </li>
+            <li>
+              • Planned and prepared every work day and planned tasks in daily
+              and weekly sprint meetings.
+            </li>
+            <li>
+              • Completed all planned goals and tickets assigned within the
+              expected time frames.
+            </li>
+          </ul>
           <hr />
-          <p>
-            Apart from programming and working on applications, I sometimes do
-            the occasional stream, and I can often be found spending a lot of my
-            free time playing games solo or online. You may find me as a
-            participant in a monster slaying party, a joke filled party game, a
-            jumpscare filled horror game, or just breaking my fingers on some
-            rhythm games. I am fascinated by Virtual Reality and enjoy VRChat,
-            where I have textured, scripted, and uploaded many personal avatars.
-            I've even done texture commissions for others online before.
-          </p>
+          <h5>Discord Bot Developer as Hobby</h5>
+          <p>Since Nov 2017</p>
+          <ul>
+            <li>
+              • Programmed 2 functional and interactive bot applications in
+              JavaScript for user-end entertainment.
+            </li>
+            <li>
+              • Formulated plans and ideas with the development team for
+              features to implement.
+            </li>
+            <li>
+              • Integrated efficient code in addition to visually appealing
+              components the client sees.
+            </li>
+            <li>
+              • Utilized a Mongo database, where upwards of 50,000 users' data
+              was managed and stored.
+            </li>
+            <li>
+              • Rewrote from JS to C# during a database change, introducing
+              faster asynchronous API requests.
+            </li>
+          </ul>
+          <hr />
         </div>
         <div className="infoBox">
-          <h5>My Biggest Projects</h5>
+          <h4>My Top Projects</h4>
+          <hr />
           <div className="projectBox">
             <div className="projectInfo">
               <div className="projectMain">
@@ -165,7 +213,7 @@ export default function Portfolio() {
               </ul>
             </div>
             <img
-              src="/images/project2.png"
+              src="/project_images/prototonbot.png"
               alt="Screenshot of Discord Bot App"
             />
           </div>
@@ -187,7 +235,10 @@ export default function Portfolio() {
                 <li>• Encouraged users like you to check out this page!</li>
               </ul>
             </div>
-            <img src="/images/project3.png" alt="Screenshot of Portfolio" />
+            <img
+              src="/project_images/newportfolio.png"
+              alt="Screenshot of Portfolio"
+            />
           </div>
           <div className="projectBox">
             <div className="projectInfo">
@@ -211,7 +262,7 @@ export default function Portfolio() {
               </ul>
             </div>
             <img
-              src="/images/project1.png"
+              src="/project_images/restresapp.png"
               alt="Screenshot of Restaurant Reservation App"
             />
           </div>
@@ -221,13 +272,15 @@ export default function Portfolio() {
       <div className="portfolio-column-c">
         <div className="infoBox">
           <h5>Languages:</h5>
+          <hr />
           <ul>
             <li>JavaScript ES6</li>
             <li>TypeScript</li>
           </ul>
         </div>
         <div className="infoBox">
-          <h5>Frontend Skills:</h5>
+          <h5>Frontend Core Skills:</h5>
+          <hr />
           <ul>
             <li>React.js</li>
             <li>HTML5</li>
@@ -235,8 +288,10 @@ export default function Portfolio() {
           </ul>
         </div>
         <div className="infoBox">
-          <h5>Backend Skills:</h5>
+          <h5>Backend Core Skills:</h5>
+          <hr />
           <ul>
+            <li>Node.js</li>
             <li>Express.js</li>
             <li>PostgreSQL</li>
             <li>SQL Script</li>
@@ -245,11 +300,13 @@ export default function Portfolio() {
         </div>
         <div className="infoBox">
           <h5>Other Skills & Tools:</h5>
+          <hr />
           <ul>
             <li>Visual Studio Code</li>
             <li>Git & GitHub</li>
             <li>GitHub Pages</li>
             <li>Vercel</li>
+            <li>Jest & Mocha</li>
             <li>Team Coordination</li>
             <li>Discord.NET (C#)</li>
             <li>Kdenlive (Video Editing)</li>

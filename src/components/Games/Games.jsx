@@ -8,7 +8,7 @@ import ListGames from "./ListGames";
 // Styles
 import "./games.css";
 
-function Games() {
+export default function Games() {
   const [games, setGames] = useState([]);
   const [gamesError, setGamesError] = useState([]);
   const [loaded, setLoaded] = useState(false);
@@ -61,5 +61,3 @@ function Games() {
     </div>
   );
 }
-
-export default Games;
