@@ -14,7 +14,7 @@ function ListProjects({ projects }) {
       <div className="projectRow" key={project.id}>
         <div className="projRowLeft col-md-4 col-lg-4">
           <img
-            src={`./project_images/${project.id}.png`}
+            src={`./project_images/${project.unique}.png`}
             alt={`${project.title}`}
             style={{ width: "100%", borderRadius: "20px" }}
           />
