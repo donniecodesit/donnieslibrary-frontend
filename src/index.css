@@ -167,5 +167,5 @@ hr {
 }
 
 #topBtn:hover {
-  background-color: rgb(156, 156, 156);
+  background-color: hsl(var(--backColor2));
 }

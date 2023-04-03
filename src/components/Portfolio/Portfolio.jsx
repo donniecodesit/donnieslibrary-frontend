@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
 // Icons
 import { SiTwitter, SiGithub, SiLinkedin } from "react-icons/si";
@@ -17,12 +18,12 @@ export default function Portfolio() {
           <img
             className="personalPhoto"
             src="/images/personalshot.png"
-            alt="Camera facing Donovan"
+            alt="A selfie of Donovan"
           />
-
           <hr />
           <h6>22 He/Him Peoria, AZ</h6>
           <h6>donovan.laws@gmail.com</h6>
+          <p>I prefer email first!</p>
           <hr />
           <a
             href="https://www.linkedin.com/in/donovanlaws/"
@@ -47,16 +48,17 @@ export default function Portfolio() {
           </a>
         </div>
         <div className="infoBox">
-          <h5>My Two Sides Laydown</h5>
+          <h5>The Tech Side, The Nerd Side</h5>
           <hr />
           <p>
-            With my knowledge and experiences, I can confidently say that: I
-            enjoy working with and organizing databases or information. I've
-            managed databases in both ElephantSQL and MongoDB. I enjoy creating
-            web pages in React, both with impressive design and functionality
-            with the purpose of displaying information or solving a task. My
-            projects are usually deployed with Vercel, or GitHub Pages if it's a
-            one-page-only site. Browse my projects to see some things I've done!
+            With my knowledge and experiences I can confidently say that I enjoy
+            working with and organizing databases and information. I've managed
+            databases in both ElephantSQL/PostreSQL and MongoDB. I enjoy
+            creating websites in React, both with impressive design and
+            functionality, with the purpose of displaying information or solving
+            a task. My projects are usually deployed with Vercel, or GitHub
+            pages when it's a static url page. Check out my projects to see
+            things I've done!
           </p>
           <hr />
           <p>
@@ -73,69 +75,60 @@ export default function Portfolio() {
         </div>
       </div>
       <div className="portfolio-column-b">
+        <img
+          src="/images/phoenixnight.png"
+          alt="Nighttime Phoenix Arizona Landscape"
+          className="phxImage"
+          style={{
+            width: "100%",
+            height: "150px",
+            objectFit: "cover",
+            marginBottom: "8px",
+            borderRadius: "20px",
+            filter: "drop-shadow(0px 0px 1px hsl(var(--textColor)))",
+          }}
+        />
         <div className="infoBox">
-          <h4>Need a Software Engineer?</h4>
+          <h4>Need A Software Engineer? Here's My Introduction!</h4>
           <hr />
           <p>
-            Welcome to my portfolio! Contact information and skills are on the
-            sides of the page. If you'd like to see my projects or works, check
-            out the Projects tab. Want to know more about me or what I can
-            provide? Keep reading! ♥
+            A Software Engineer versed in front-end development and back-end
+            development using a modern tech stack consisting of PostgreSQL,
+            Express, React, and Node in JavaScript! I am actively seeking roles
+            to continue my professional experiences! I have relevant experiences
+            professionally and recreationally listed below, as well as a few
+            examples of my bigger projects.
           </p>
           <hr />
-          <img
-            src="/images/phoenixnight.png"
-            alt="Nighttime Phoenix Arizona Landscape"
-            className="phxImage"
-            style={{
-              width: "100%",
-              height: "150px",
-              objectFit: "cover",
-              marginBottom: "8px",
-            }}
-          />
-          <hr />
-        </div>
-        <div className="infoBox">
-          <h4>My Introduction & About Me!</h4>
-          <hr />
           <p>
-            Hello there, and welcome! I'm a Software Engineer and Web Developer
-            always wanting to learn more in development and tech. Born in North
-            Carolina, I moved to Arizona in 2019 with friends who supported my
-            career path.
-          </p>
-          <p>
-            Before I got into tech, I was a Content Creator and Streamer on
-            YouTube and Twitch. The content I featured was about helping users
-            write commands for a mod engine using text/command scripts. While
-            not related to tech, my audience grew and reached over 53,000
+            Born and raised in North Carolina and moved to Arizona in 2019!
+            Before I got into development, I was a Content Creator and Streamer
+            on YouTube and Twitch. The content I featured was about helping
+            users write commands for a mod engine using text/command scripts.
+            While not related to tech, my audience grew and reached over 54,000
             people, and helped me learned how to instruct, assist, and help
             others who are having technical issues.
           </p>
           <hr />
           <p>
-            In 2017 I started a Discord Bot Project in JavaScript and I worked
-            on it between 2017 and 2020. By then the bot gained way more
-            activity and hundreds of users. In 2020, I rewrote the project in C#
-            using Discord.NET and moved from a flat-file database to a MongoDB
-            database. After making major changes in 2022, the database was reset
-            to accompany new changes.
-          </p>
-          <p>
-            In 2021 my interest in tech was huge, and from November 2021 to
-            April 2022 I enrolled and developed in Thinkful's Software
-            Engineering Immersion Program. Since then I have learned and
-            improved many of my skills in Node, React, Express, and other
-            supporting sub liraries. From August 2022 to October 2022, I was
-            remotely working at SPJ Solutions and further improved my skills
-            during that role. The team was effected by a layoff in October 2022
-            and I have been seeking employment during 2022 and 2023.
+            In 2017, I created a Discord Bot using Discord.js and worked on it
+            between 2017 - 2020. Then bot had gained way more activity and
+            hundreds of users. In 2020, I rewrote the project in C# using
+            Discord.NET, and moved from a flat-file database to MongoDB. In 2021
+            my interest in the industry grew, and from November 2021 to April
+            2022 I was enrolled in Thinkful's Software Engineering Immersion
+            Program. I have studied, learned, and improved my skills in Node,
+            React, Express, and other supporting libraries or programs. From
+            August 2022 to October 2022, I was working at SPJ Solutions
+            remotely, and further improved my skills during that role. The team
+            was effected by a layoff in October 2022 and I have been on the job
+            search since then, while still being human and trying to live other
+            parts of life too!
           </p>
           <hr />
         </div>
         <div className="infoBox">
-          <h4>Relevant Experience</h4>
+          <h4>Relevant Experiences!</h4>
           <hr />
           <h5>Software Engineer at SPJ Solutions</h5>
           <p>Aug 2022 - Oct 2022</p>
