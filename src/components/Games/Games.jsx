@@ -35,26 +35,32 @@ export default function Games() {
 
   return (
     <div className="games-container">
-      <div className="gamesNote">
-        <h4>What's this section?</h4>
-        <p>
-          This page is for the gamers out there! Games can be a great way to
-          start a conversation (and code discussion too), so I'd like to share
-          some of my top favorites here!
-        </p>
-      </div>
       {loaded ? (
         <>
-          {gamesError[0] && <div className="error">{gamesError}</div>}
+          {gamesError[0] && (
+            <div className="error">
+              Unable to fetch data. The server may be temporarily unavailable.
+            </div>
+          )}
+          {!gamesError[0] && (
+            <div className="gamesNote">
+              <h4>What's this section?</h4>
+              <p>
+                This page is for the gamers out there! Games can be a great way
+                to start a conversation (and code discussion too), so I'd like
+                to share some of my top favorites here!
+              </p>
+            </div>
+          )}
           <ListGames games={games} />
         </>
       ) : (
         <>
-          <h2>Getting Games List...</h2>
+          <h2 className="fetching">Getting Games from the DB!</h2>
           <img
-            src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/circular_progress_indicator_square_large.gif"
+            src="https://i.stack.imgur.com/hzk6C.gif"
             alt="Loading GIF"
-            style={{ width: "10%", marginBottom: "720px" }}
+            style={{ width: "10%" }}
           />
         </>
       )}

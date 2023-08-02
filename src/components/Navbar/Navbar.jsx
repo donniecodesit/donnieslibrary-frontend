@@ -40,7 +40,7 @@ export default function Navbar() {
               : pathname === "/projects"
               ? "Donovan's Projects"
               : pathname === "/games"
-              ? "Donovan's Games"
+              ? "Donovan's Fave Games"
               : "???"}
           </h3>
         </div>
@@ -48,7 +48,7 @@ export default function Navbar() {
           <div className="navigation-svg" onClick={() => navigate("/games")}>
             <BsFillGrid3X3GapFill />
             <p className={pathname === "/games" ? "active" : "inactive"}>
-              Games
+              Gamers?
             </p>
           </div>
           <div className="navigation-svg">

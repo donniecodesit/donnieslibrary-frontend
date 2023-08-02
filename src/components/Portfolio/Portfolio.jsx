@@ -12,18 +12,16 @@ export default function Portfolio() {
     <div className="portfolio-container">
       <div className="portfolio-column-a">
         <div className="infoBox">
-          <h1>Donovan Laws</h1>
-          <h5>Software Engineer</h5>
-          <hr />
           <img
             className="personalPhoto"
             src="/images/personalshot.png"
             alt="A selfie of Donovan"
           />
+          <h1>Donovan Laws</h1>
+          <h5>Software Engineer</h5>
           <hr />
-          <h6>22 He/Him Peoria, AZ</h6>
+          <h6>22 | He/They | Peoria, AZ</h6>
           <h6>donovan.laws@gmail.com</h6>
-          <p>I prefer email first!</p>
           <hr />
           <a
             href="https://www.linkedin.com/in/donovanlaws/"
@@ -48,87 +46,54 @@ export default function Portfolio() {
           </a>
         </div>
         <div className="infoBox">
-          <h5>The Tech Side, The Nerd Side</h5>
+          <h5>Tech Drive</h5>
           <hr />
           <p>
-            With my knowledge and experiences I can confidently say that I enjoy
-            working with and organizing databases and information. I've managed
-            databases in both ElephantSQL/PostreSQL and MongoDB. I enjoy
-            creating websites in React, both with impressive design and
-            functionality, with the purpose of displaying information or solving
-            a task. My projects are usually deployed with Vercel, or GitHub
-            pages when it's a static url page. Check out my projects to see
-            things I've done!
+            I can confidently say I love working with and organizing databases
+            and information. I've created databases with both ElephantSQL and
+            MongoDB. I've written back-end APIs with Node.js to use some of
+            those databases, and I enjoy creating interactive web apps in React
+            that make use of those APIS, as well as design and functionality. I
+            usually deploy my projects with Vercel, some are with GitHub Pages
+            if it's a static app!
           </p>
           <hr />
+        </div>
+        <div className="infoBox">
+          <h5>Free Time Passion</h5>
+          <hr />
           <p>
-            When not programming, I sometimes do the occasional game stream, and
-            can often be found playing solo or online games. You may find me as
-            a participant in a monster slaying party, a joke filled party game,
-            a jumpscare filled horror game, or breaking my fingers on some
-            rhythm games. I am fascinated by Virtual Reality and the tech
-            involved behind it, and enjoy VRChat, where I have textured,
-            scripted, and uploaded many personal avatars. I've also done texture
-            commissions for people online too!
+            In my free time, I enjoy gaming similarly to many others! You may
+            find me participating in a monster-slaying party, a joke-filled
+            party game, a jumpscare-filled horror game, or busting my fingers on
+            some rhythm games. I am fascinated by Virtual Reality and the
+            technology involved behind it, and I enjoy VRChat, where I have
+            textured, scripted, and uploaded many personal avatars. I've also
+            done texture commissions for people online too!
           </p>
           <hr />
         </div>
       </div>
       <div className="portfolio-column-b">
-        <img
-          src="/images/phoenixnight.png"
-          alt="Nighttime Phoenix Arizona Landscape"
-          className="phxImage"
-          style={{
-            width: "100%",
-            height: "150px",
-            objectFit: "cover",
-            marginBottom: "8px",
-            borderRadius: "20px",
-            filter: "drop-shadow(0px 0px 1px hsl(var(--textColor)))",
-          }}
-        />
         <div className="infoBox">
-          <h4>Need A Software Engineer? Here's My Introduction!</h4>
+          <h4>~ Need A Software Engineer? ~</h4>
           <hr />
           <p>
-            A Software Engineer versed in front-end development and back-end
-            development using a modern tech stack consisting of PostgreSQL,
-            Express, React, and Node in JavaScript! I am actively seeking roles
-            to continue my professional experiences! I have relevant experiences
-            professionally and recreationally listed below, as well as a few
-            examples of my bigger projects.
-          </p>
-          <hr />
-          <p>
-            Born and raised in North Carolina and moved to Arizona in 2019!
-            Before I got into development, I was a Content Creator and Streamer
-            on YouTube and Twitch. The content I featured was about helping
-            users write commands for a mod engine using text/command scripts.
-            While not related to tech, my audience grew and reached over 54,000
-            people, and helped me learned how to instruct, assist, and help
-            others who are having technical issues.
-          </p>
-          <hr />
-          <p>
-            In 2017, I created a Discord Bot using Discord.js and worked on it
-            between 2017 - 2020. Then bot had gained way more activity and
-            hundreds of users. In 2020, I rewrote the project in C# using
-            Discord.NET, and moved from a flat-file database to MongoDB. In 2021
-            my interest in the industry grew, and from November 2021 to April
-            2022 I was enrolled in Thinkful's Software Engineering Immersion
-            Program. I have studied, learned, and improved my skills in Node,
-            React, Express, and other supporting libraries or programs. From
-            August 2022 to October 2022, I was working at SPJ Solutions
-            remotely, and further improved my skills during that role. The team
-            was effected by a layoff in October 2022 and I have been on the job
-            search since then, while still being human and trying to live other
-            parts of life too!
+            Hey there, welcome! I am a Software Engineer who works with
+            front-end and back-end applications, using a modern tech stack
+            consisting of the skills you can see on this page! I'm actively
+            seeking a job opportunity and would love to contribute to a role
+            that my abilities are needed for. If you have any insights you'd be
+            willing to share, please get in touch with me! I enjoy creating,
+            organizing (definitely a "neat freak"), and improving code as it is
+            worked on. I thrive on experimenting with creativity and challenges,
+            problem-solving, and refactoring solutions, especially if it teaches
+            me something new.
           </p>
           <hr />
         </div>
         <div className="infoBox">
-          <h4>Relevant Experiences!</h4>
+          <h4>~ Previous Experiences ~</h4>
           <hr />
           <h5>Software Engineer at SPJ Solutions</h5>
           <p>Aug 2022 - Oct 2022</p>
@@ -138,8 +103,8 @@ export default function Portfolio() {
               from in-line styles to a CSS library.
             </li>
             <li>
-              • Optimized and cleaned up code created by developers previously
-              contributed to the codebase.
+              • Optimized and cleaned up code created by developers who
+              previously contributed to the codebase.
             </li>
             <li>
               • Created unit tests in Jest to test various endpoints for valid
@@ -155,7 +120,9 @@ export default function Portfolio() {
             </li>
           </ul>
           <hr />
-          <h5>Discord Bot Developer as Hobby</h5>
+          <h5>
+            Discord Bot Developer <span>(Hobby)</span>
+          </h5>
           <p>Since Nov 2017</p>
           <ul>
             <li>
@@ -167,7 +134,7 @@ export default function Portfolio() {
               features to implement.
             </li>
             <li>
-              • Integrated efficient code in addition to visually appealing
+              • Integrated efficient code, in addition, to visually appealing
               components the client sees.
             </li>
             <li>
@@ -182,13 +149,19 @@ export default function Portfolio() {
           <hr />
         </div>
         <div className="infoBox">
-          <h4>My Top Projects</h4>
+          <h4>~ My Top Projects ~</h4>
           <hr />
           <div className="projectBox">
             <div className="projectInfo">
               <div className="projectMain">
                 <h5>Prototon Discord Bot</h5>
-                <a href="noweher">[GitHub]</a>
+                <a
+                  href="https://github.com/donniecodesit/PrototonBot"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  [GitHub]
+                </a>
               </div>
               <ul>
                 <li>
@@ -200,7 +173,7 @@ export default function Portfolio() {
                   for entertainment purposes.
                 </li>
                 <li>
-                  • Led and communicated with a small team of developers,
+                  • Led and communicated with a small team of developers, and
                   implemented user requests and features.
                 </li>
               </ul>
@@ -214,12 +187,18 @@ export default function Portfolio() {
             <div className="projectInfo">
               <div className="projectMain">
                 <h5>Personal Portfolio</h5>
-                <a href="noweher">[GitHub]</a>
+                <a
+                  href="https://github.com/donniecodesit/donnieslibrary-frontend"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  [GitHub]
+                </a>
               </div>
               <ul>
                 <li>
                   • Built with PERN stack to showcase my personal portfolio,
-                  sharing information about me and my skillset.
+                  sharing information about me and my skill set.
                 </li>
                 <li>
                   • Created a one-page functional website with multiple routes
@@ -237,12 +216,18 @@ export default function Portfolio() {
             <div className="projectInfo">
               <div className="projectMain">
                 <h5>Restaurant Reservations</h5>
-                <a href="noweher">[GitHub]</a>
+                <a
+                  href="https://github.com/donniecodesit/restaurant-reservation-system"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  [GitHub]
+                </a>
               </div>
               <ul>
                 <li>
                   • Built a PERN stack application to book and edit
-                  reservations, stored an managed with a database.
+                  reservations, stored and managed with a database.
                 </li>
                 <li>
                   • Engineered multiple routes frontend and backend to manage
@@ -264,11 +249,12 @@ export default function Portfolio() {
       </div>
       <div className="portfolio-column-c">
         <div className="infoBox">
-          <h5>Languages:</h5>
+          <h5>Languages Used:</h5>
           <hr />
           <ul>
             <li>JavaScript ES6</li>
             <li>TypeScript</li>
+            <li>Some C#</li>
           </ul>
         </div>
         <div className="infoBox">
@@ -302,6 +288,8 @@ export default function Portfolio() {
             <li>Jest & Mocha</li>
             <li>Team Coordination</li>
             <li>Discord.NET (C#)</li>
+            <li>Postman</li>
+            <li>ElephantSQL</li>
             <li>Kdenlive (Video Editing)</li>
             <li>Paint Net (Image Editing)</li>
             <li>Unity (Scene Editing)</li>
