@@ -20,7 +20,7 @@ export default function Portfolio() {
           <h1>Donovan Laws</h1>
           <h5>Software Engineer</h5>
           <hr />
-          <h6>22 | He/They | Peoria, AZ</h6>
+          <h6>23 | He/They | Peoria, AZ</h6>
           <h6>donovan.laws@gmail.com</h6>
           <hr />
           <a
