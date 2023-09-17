@@ -93,57 +93,47 @@ export default function Portfolio() {
           <hr />
         </div>
         <div className="infoBox">
-          <h4>~ Previous Experiences ~</h4>
+          <h4>~ Professional Experiences ~</h4>
           <hr />
           <h5>Software Engineer at SPJ Solutions</h5>
           <p>Aug 2022 - Oct 2022</p>
           <ul>
             <li>
-              • Consolidated and organized all of the styling in the codebase
-              from in-line styles to a CSS library.
+              • Refocused the readability of over 400 components by
+              consolidating in-line styles with Emotion CSS.
             </li>
             <li>
-              • Optimized and cleaned up code created by developers who
-              previously contributed to the codebase.
+              • Implemented tests utilizing TypeScript and Jest to validate the
+              data returned from over 30 endpoints.
             </li>
             <li>
-              • Created unit tests in Jest to test various endpoints for valid
-              behavior before deployment.
+              • Established preparations for plans or tasks in sprint meetings
+              daily with 5 to 19 members via Zoom.
             </li>
             <li>
-              • Planned and prepared every work day and planned tasks in daily
-              and weekly sprint meetings.
-            </li>
-            <li>
-              • Completed all planned goals and tickets assigned within the
-              expected time frames.
+              • Demonstrated the ability to complete anticipated goals within
+              assigned time frames.
             </li>
           </ul>
           <hr />
-          <h5>
-            Discord Bot Developer <span>(Hobby)</span>
-          </h5>
+          <h5>Freelance Chatbot Developer</h5>
           <p>Since Nov 2017</p>
           <ul>
             <li>
-              • Programmed 2 functional and interactive bot applications in
-              JavaScript for user-end entertainment.
+              • Programmed 3 iterations of interactive and functional chatbots
+              for users on the Discord platform.
             </li>
             <li>
-              • Formulated plans and ideas with the development team for
-              features to implement.
+              • Itemized and managed feature ideas or plans with a co-developer
+              in the style of user requests.
             </li>
             <li>
-              • Integrated efficient code, in addition, to visually appealing
-              components the client sees.
+              • Designed and oversaw the MongoDB database which stored over
+              50,000 profiles for users.
             </li>
             <li>
-              • Utilized a Mongo database, where upwards of 50,000 users' data
-              was managed and stored.
-            </li>
-            <li>
-              • Rewrote from JS to C# during a database change, introducing
-              faster asynchronous API requests.
+              • Transformed both the codebase and database while rewriting the
+              bot from JavaScript to C#.
             </li>
           </ul>
           <hr />
@@ -165,16 +155,20 @@ export default function Portfolio() {
               </div>
               <ul>
                 <li>
-                  • Built with JavaScript, Node.JS, Discord.Net, C#, and
-                  MongoDB.
+                  • Developed a chatbot application that users on Discord can
+                  interact with for entertainment purposes.
                 </li>
                 <li>
-                  • Developed a chatbot application that users can interact with
-                  for entertainment purposes.
+                  • Programmed the chatbot with C# and Discord.Net, and managed
+                  the database with MongoDB.
                 </li>
                 <li>
-                  • Led and communicated with a small team of developers, and
-                  implemented user requests and features.
+                  • Collaborated with colleagues to design features, appearance,
+                  structure, and functionality.
+                </li>
+                <li>
+                  Remodeled bot features for optimization when changes to the
+                  Discord API occurred.
                 </li>
               </ul>
             </div>
@@ -226,16 +220,20 @@ export default function Portfolio() {
               </div>
               <ul>
                 <li>
-                  • Built a PERN stack application to book and edit
-                  reservations, stored and managed with a database.
+                  • Engineered a full-stack application to manage and book
+                  reservations at restaurant tables.
                 </li>
                 <li>
-                  • Engineered multiple routes frontend and backend to manage
-                  and edit reservations and tables using the API.
+                  • Programmed the application with PostgreSQL, Express, React,
+                  and JavaScript.
                 </li>
                 <li>
-                  • Managed different environments for development, testing, and
-                  production, alongside version control with GitHub.
+                  • Controlled different environments during development,
+                  including testing and production.
+                </li>
+                <li>
+                  Formalized the features of the website on individual branches
+                  to validate functionality.
                 </li>
               </ul>
             </div>
